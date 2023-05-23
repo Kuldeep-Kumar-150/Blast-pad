@@ -13,6 +13,9 @@
   top: -2px;
   left: 1px;
 }
+.bg_blaspad_img {
+  background-image: url(./assets/img/png/second_blas_pool_img.png);
+}
 @media (min-width: 768px) {
   .footer_bg_clouds {
     background-image: url("../src//assets/img/png/footer_clodly_img.png");
