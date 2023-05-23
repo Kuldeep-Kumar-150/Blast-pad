@@ -3,7 +3,8 @@ import BlockChain from './components/BlockChain';
 import Header from './components/Header';
 import MyNav from './components/MyNav';
 import RoadMap from './components/RoadMap';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <>
