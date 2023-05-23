@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import MyNav from "./components/MyNav";
 import OurActive from "./components/OurActive";
 import RoadMap from "./components/RoadMap";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import StakeYourTokens from "./components/StakeYourTokens";
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
         <RoadMap />
         <Frequently />
         <OurActive />
+        <StakeYourTokens />
       </div>
     </>
   );
