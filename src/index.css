@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+.ff_Firasans {
+  font-family: "Fira Sans", sans-serif;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .ff_raleway {
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 .ff_inter {
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 .bg_blue_linear {
-  background: linear-gradient(254.15deg, #4478F9 11.47%, #070380 86.69%);
+  background: linear-gradient(254.15deg, #4478f9 11.47%, #070380 86.69%);
 }
 
 .header_bg_img {
@@ -24,7 +27,16 @@
 }
 
 .small_circle {
-  background: linear-gradient(135deg, #FFFFFF 14.65%, rgba(255, 255, 255, 0.97) 16.07%, rgba(255, 255, 255, 0.63) 33.75%, rgba(255, 255, 255, 0.36) 48.6%, rgba(255, 255, 255, 0.16) 61.32%, rgba(255, 255, 255, 0.04) 71.22%, rgba(255, 255, 255, 0) 76.88%);
+  background: linear-gradient(
+    135deg,
+    #ffffff 14.65%,
+    rgba(255, 255, 255, 0.97) 16.07%,
+    rgba(255, 255, 255, 0.63) 33.75%,
+    rgba(255, 255, 255, 0.36) 48.6%,
+    rgba(255, 255, 255, 0.16) 61.32%,
+    rgba(255, 255, 255, 0.04) 71.22%,
+    rgba(255, 255, 255, 0) 76.88%
+  );
   background-blend-mode: overlay;
   mix-blend-mode: overlay;
   height: 42px;
@@ -39,7 +51,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #4377F8;
+  background-color: #4377f8;
   mix-blend-mode: overlay;
   filter: blur(85.5px);
   z-index: -1;
@@ -52,7 +64,7 @@
 .social_icons::after {
   content: "";
   position: absolute;
-  border: 1px solid #4377F8;
+  border: 1px solid #4377f8;
   filter: blur(2px);
   height: 33px;
   width: 33px;
@@ -62,7 +74,7 @@
 }
 
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }

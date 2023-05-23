@@ -1,0 +1,20 @@
+/* .cards {
+  @apply;
+} */
+
+.footer_social_icons::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #4377f8;
+  filter: blur(2px);
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  top: -2px;
+  left: 1px;
+}
+@media (min-width: 768px) {
+  .footer_bg_clouds {
+    background-image: url("../src//assets/img/png/footer_clodly_img.png");
+  }
+}
