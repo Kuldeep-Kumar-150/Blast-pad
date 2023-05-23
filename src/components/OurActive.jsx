@@ -1,5 +1,6 @@
 import React from "react";
 import { mydata } from "../components/js/SliderData";
+import Slider from "react-slick";
 
 const OurActive = () => {
   var settings = {
@@ -46,12 +47,17 @@ const OurActive = () => {
   return (
     <div>
       <div className="container mx-auto px-3">
-        <Slider {...settings} className="py-lg-3 justify-content-center">
+        <h2 className="text-center text-white ff_raleway text-[40px] font-semibold">
+          Our Active Token
+        </h2>
+        <Slider {...settings} className=" py-14 justify-content-center">
           {mydata
             .map((fun) => {
-              return <div className=" w-4/12"></div>;
+              return (
+                <div className=" w-4/12 text-white bg-[rgba(67, 119, 248, 0.07)] rounded-[15px] backdrop-blur-[81.5px]"></div>
+              );
             })
-            .slice(0, 4)}
+            .slice(0, 5)}
         </Slider>
       </div>
     </div>

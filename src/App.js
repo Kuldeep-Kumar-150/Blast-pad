@@ -9,7 +9,16 @@ import RoadMap from "./components/RoadMap";
 function App() {
   return (
     <>
-      <OurActive />
+      <div class="overflow-hidden">
+        <div className="header_bg_img xl:flex xl:flex-col xl:min-h-[100vh]">
+          <MyNav />
+          <Header />
+        </div>
+        <BlockChain />
+        <RoadMap />
+        <Frequently />
+        <OurActive />
+      </div>
     </>
   );
 }
