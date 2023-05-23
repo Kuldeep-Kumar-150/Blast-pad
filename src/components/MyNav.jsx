@@ -124,12 +124,14 @@ const MyNav = () => {
               </a>
             </li>
             <li>
-              <a
-                className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
-                href="#"
-              >
-                Token Staking
-              </a>
+              <Link to={"/tokenStacking"}>
+                <a
+                  className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                  href="#"
+                >
+                  Token Staking
+                </a>
+              </Link>
             </li>
             <li>
               <a
@@ -155,10 +157,7 @@ const MyNav = () => {
                 </button>
               </div>
             </div>
-            <div
-              onClick={() => setNav(!nav)}
-              className="flex flex-col gap-1 ms-8 z-50 xl:hidden"
-            >
+            <div onClick={() => setNav(!nav)} className="flex flex-col gap-1 ms-8 z-50 xl:hidden">
               <div className="bg_blue_linear h-1 w-7 rounded-md"></div>
               <div className="bg_blue_linear h-1 w-7 rounded-md"></div>
               <div className="bg_blue_linear h-1 w-7 rounded-md"></div>

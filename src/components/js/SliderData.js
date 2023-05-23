@@ -45,4 +45,18 @@ export const mydata = [
     aeroImage: aeroImage,
     btn4: "BlastPad.io",
   },
+  {
+    img: metal,
+    h4: "Metal DAO",
+    para: "  $METAL",
+    btn: "Total raise 69k",
+    btn1: "value 3.2M",
+    btn2: "Min allow$0",
+    btn3: "12%",
+    para1: "0/87,074 MECHA",
+    para2: "10 BUSD",
+    btn5: "Active",
+    aeroImage: aeroImage,
+    btn4: "BlastPad.io",
+  }
 ];
