@@ -1,5 +1,2 @@
-.frequentlyBg {
-  background-image: url("../src/assets/img/png/frequentlyBackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+@import url("./mycss.css");
+
