@@ -38,7 +38,12 @@
 
 .roadmap_bg_img {
   background-image: url("./assets/img/png/roadmap-bg-img.png");
-  /* min-height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.create_token_bg_img {
+  background-image: url('./assets/img/png/create-token-bg-img.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

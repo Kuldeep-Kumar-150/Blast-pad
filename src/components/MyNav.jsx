@@ -70,12 +70,14 @@ const MyNav = () => {
               </a>
             </li>
             <li onClick={() => setNav(false)}>
-              <a
-                className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
-                href="#"
-              >
-                Create a Token
-              </a>
+              <Link to={"/createtoken"}>
+                <a
+                  className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                  href="#"
+                >
+                  Create a Token
+                </a>
+              </Link>
             </li>
             <li
               onClick={() => setModal(true)}
@@ -134,12 +136,14 @@ const MyNav = () => {
               </Link>
             </li>
             <li>
-              <a
-                className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
-                href="#"
-              >
-                Create a Token
-              </a>
+              <Link to={"/createtoken"}>
+                <a
+                  className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                  href="#"
+                >
+                  Create a Token
+                </a>
+              </Link>
             </li>
           </ul>
           <div className="flex items-center">
@@ -322,7 +326,7 @@ const MyNav = () => {
             </div>
           </div>
         </div> */}
-        <div className={modal === true ? "absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 scale-[100%] ease-in-out duration-700 lg:w-[882px] w-[90%]" : "lg:w-[882px] w-[90%] ease-in-out duration-700 scale-0 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50"}>
+        <div className={modal === true ? "fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 scale-[100%] ease-in-out duration-700 lg:w-[882px] w-[90%]" : "lg:w-[882px] w-[90%] ease-in-out duration-700 scale-0 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50"}>
           <div className="z-40 border-[1.2px] border-[#576076] bg-[#0B0A26]  lg:bg-[#464C5A] relative rounded-2xl min-h-[200px] mx-auto p-3 pt-5 md:pt-10 md:px-[27px] lg:pb-[29px]">
             <h5 className="text-[40px] font-bold text-white ff_raleway text-center z-40">Get in Touch</h5>
             <p className="text-base font-normal ff_raleway text-[#C2C6D1] text-center z-40">We Are Here For You! How Can We Help?</p>

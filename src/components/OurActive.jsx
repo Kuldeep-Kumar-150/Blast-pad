@@ -4,6 +4,7 @@ import Slider from "react-slick";
 
 const OurActive = () => {
   const first = useRef();
+  // console.log(first)
   var settings = {
     dots: false,
     infinite: true,
@@ -77,12 +78,12 @@ const OurActive = () => {
         <Slider
           {...settings}
           ref={first}
-          className=" py-8 md:py-11 lg:py-14 gap-2 justify-content-center "
+          className="py-8 md:py-11 lg:py-14 gap-2 justify-content-center "
         >
           {mydata
             .map((fun) => {
               return (
-                <div className="md:px-2 ">
+                <div className="md:px-2">
                   <div
                     className=" w-full text-white border card_shadow 
                 ] border-[#232249] rounded-[15px]  p-4 backdrop-blur-[81.5px]"
