@@ -1,7 +1,7 @@
 import React from 'react'
 import RecentTokens from './RecentTokens'
 import MyNav from './MyNav'
-
+import CreateToken from './CreateToken'
 const TokenPage = () => {
     return (
         <>
@@ -9,7 +9,7 @@ const TokenPage = () => {
                 <MyNav />
                 <RecentTokens />
             </div>
-
+            <CreateToken />
         </>
     )
 }
