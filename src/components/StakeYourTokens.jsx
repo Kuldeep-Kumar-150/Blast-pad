@@ -52,10 +52,11 @@ const StakeYourTokens = () => {
     ],
   };
   return (
-    <div className="container mx-auto px-3">
+    <div className="container mx-auto px-3 mt-20 md:mt-36 lg:mt-60">
+      <h6 className="text-[30px] font-bold ff_raleway text-white text-center">Stake Your Tokens</h6>
       <Slider
         {...settings}
-        className="grid grid-cols-3 py-8  md:py-11 lg:py-14 gap-4 justify-content-center "
+        className="grid grid-cols-3 pt-6 md:pt-14 pb-12  md:py-11 lg:py-14 gap-4 justify-content-center "
       >
         {myCard
           .map((par) => {
@@ -129,12 +130,12 @@ const StakeYourTokens = () => {
           })
           .slice(0, 12)}
       </Slider>
-      <div className="text-center mt-12">
-        <button className="text-white font-semibold text-sm ff_raleway py-4 px-9 bg-gradient-to-r from-[#070380] rounded-[36px] to-[#4478F9]">
-          Show more
+      <div className="text-center mb-10 sm:mb-20 md:mb-40">
+      <button className="text-white font-semibold text-sm ff_raleway py-4 px-9 bg-gradient-to-r from-[#070380] rounded-[36px] to-[#4478F9]">
+        Show more
         </button>
       </div>
-    </div>
+    </div >
   );
 };
 

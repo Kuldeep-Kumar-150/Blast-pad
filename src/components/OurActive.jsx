@@ -35,11 +35,11 @@ const OurActive = () => {
     ],
   };
   return (
-    <div className="py-16 ">
+    <div className="py-16 xl:py-0 flex flex-col justify-center items-center flex-grow">
       <div className="container mx-auto px-3 relative">
         <button
           onClick={() => first.current.slickPrev()}
-          className=" h-12 flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-64 bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
+          className="h-12 flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-64 bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
         >
           <svg
             width="14"

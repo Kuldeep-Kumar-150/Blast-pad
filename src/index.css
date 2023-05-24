@@ -30,6 +30,12 @@
   background-repeat: no-repeat;
 }
 
+.header_img_2 {
+  background-image: url("./assets/img/png/2nd-header-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .roadmap_bg_img {
   background-image: url("./assets/img/png/roadmap-bg-img.png");
   /* min-height: 100vh; */

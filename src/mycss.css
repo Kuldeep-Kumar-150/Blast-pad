@@ -15,6 +15,14 @@
 }
 
 @media (min-width: 767.98px) {
+  .bg_blaspad_img {
+    background-image: url("./assets/img/png/rewards_bg_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
   .footer_bg_clouds {
     background-image: url("../src//assets/img/png/footer_clodly_img.png");
   }

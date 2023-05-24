@@ -3,7 +3,8 @@ import proTon from "../assets/img/png/proton.png";
 import earthImg2 from "../assets/img/svg/circle-img.svg";
 const BlockChain = () => {
   return (
-    <section className="relative my-20 sm:mt-40">
+    <section className="relative my-20 sm:mt-40 ">
+      {" "}
       <div className="container mx-auto px-3 relative">
         <img
           className="absolute left-0 top-[-100px]"

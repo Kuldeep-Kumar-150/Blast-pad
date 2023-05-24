@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HomePage from './components/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import TokenStacking from './components/TokenStacking';
-
+import BlaspadBonesSection from "./components/BlaspadBonesSection";
 
 function App() {
   return (
