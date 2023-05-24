@@ -54,12 +54,14 @@ const MyNav = () => {
               </a>
             </li>
             <li onClick={() => setNav(false)}>
-              <a
-                className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
-                href="#"
-              >
-                Token AirDrop
-              </a>
+              <Link to={"/airdrop"}>
+                <a
+                  className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                  href="#"
+                >
+                  Token AirDrop
+                </a>
+              </Link>
             </li>
             <li onClick={() => setNav(false)}>
               <Link to={"/tokenStacking"}>
@@ -120,12 +122,14 @@ const MyNav = () => {
               </a>
             </li>
             <li>
-              <a
-                className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
-                href="#"
-              >
-                Token AirDrop
-              </a>
+              <Link to={"/airdrop"}>
+                <a
+                  className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                  href="#"
+                >
+                  Token AirDrop
+                </a>
+              </Link>
             </li>
             <li>
               <Link to={"/tokenStacking"}>

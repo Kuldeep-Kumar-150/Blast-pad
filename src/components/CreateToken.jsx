@@ -1,51 +1,94 @@
 import React from "react";
-
+import { useState } from "react";
 const CreateToken = () => {
+  const initialvalue = {
+    name: "",
+    password: "",
+  }
+  const [formValue, setformValue] = useState(initialvalue);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setformValue({ ...formValue, [name]: value });
+  };
+  const formSubmit = (e) => {
+    e.preventDefault();
+    console.log(formValue)
+    setformValue(initialvalue)
+  }
+  {/*SUBMIT TYPE POPUP OTIFICATION*/ }
+  function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+  }
+
+
+  // const realFileBtn = document.getElementById("real-file");
+  // const customBtn = document.getElementById("custom-button");
+  // const customTxt = document.getElementById("custom-text");
+  // customBtn.addEventListener("click", function () {
+  //   realFileBtn.click();
+  // });
+  // realFileBtn.addEventListener("change", function () {
+  //   if (realFileBtn.value) {
+  //     customTxt.innerHTML = realFileBtn.value.match(
+  //       /[\/\\]([\w\d\s\.\-\(\)]+)$/
+  //     )[1];
+  //   }
+  //   else {
+  //     customTxt.innerHTML = "no files"
+  //   }
+  // })
   return (
     <div className="frequentlyBg py-16 md:py-28 lg:py-40">
       <div className="container mx-auto px-3">
         <h2 className="text-white text-center text-3xl md:text-4xl lg:text-[40px] font-bold ff_raleway">
           Create Token
         </h2>
-        <div className=" mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
+        <div className="relative mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
           <button className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
             Step 2
           </button>
-          <form className="mt-4 md:flex items-center gap-5">
-            <div className="w-full">
-              <label
-                htmlFor="login"
-                className="text-[#CFCFD6] text-base font-normal ff_raleway"
-              >
-                Log ID
-              </label>{" "}
-              <br />
-              <input
-                className="mt-3 border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B8BAC8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
-                placeholder="xyn@explaim.com"
-                type="text"
-                id="login"
-              />
+          <form onSubmit={formSubmit}>
+            <div className="mt-4 md:flex items-center gap-5">
+              <div className="w-full">
+                <label
+                  htmlFor="login"
+                  className="text-[#CFCFD6] text-base font-normal ff_raleway"
+                >
+                  Log ID
+                </label>
+                <br />
+                <input value={formValue.name} name="name" onChange={handleInputChange}
+                  className="mt-3 border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B8BAC8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
+                  placeholder="xyn@explaim.com"
+                  type="text"
+                  id="login"
+                />
+              </div>
+              <div className="w-full mt-3 md:mt-0">
+                <label
+                  htmlFor="password"
+                  className="text-[#CFCFD6] text-base font-normal ff_raleway"
+                >
+                  Password
+                </label>
+                <br />
+                <input required value={formValue.password} name="password" onChange={handleInputChange}
+                  className="mt-3 border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#092E8B] py-[17px] px-4 outline-none rounded-[5px]"
+                  placeholder=". . . . . . . . . "
+                  type="password"
+                  id="password"
+                />
+              </div>
             </div>
-            <div className="w-full mt-3 md:mt-0">
-              <label
-                htmlFor="password"
-                className="text-[#CFCFD6] text-base font-normal ff_raleway"
-              >
-                Password
-              </label>{" "}
-              <br />
-              <input
-                className="mt-3 border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#092E8B] py-[17px] px-4 outline-none rounded-[5px]"
-                placeholder=". . . . . . . . . "
-                type="password"
-                id="password"
-              />
-            </div>
+            <button onClick={() => myFunction()} type=" submit" className="font-normal text-base text-white py-3 px-7 ff_raleway mt-5 rounded-[32px] bg-gradient-to-r from-[#070380] to-[#4478F9]">
+              Log in
+            </button>
           </form>
-          <button className="font-normal text-base text-white py-3 px-7 ff_raleway mt-5 rounded-[32px] bg-gradient-to-r from-[#070380] to-[#4478F9]">
-            Log in
-          </button>
+          {/*SUBMIT TYPE POPUP OTIFICATION*/}
+          <div id="snackbar">your form was successfully submitted</div>
         </div>
         <div className=" mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
           <button className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
@@ -59,7 +102,7 @@ const CreateToken = () => {
                   className="text-[#CFCFD6] text-base font-normal ff_raleway"
                 >
                   Issuer
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
@@ -74,7 +117,7 @@ const CreateToken = () => {
                   className="text-[#CECFD7] text-base font-normal ff_raleway"
                 >
                   Max Token Supply
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] py-[17px] px-4 outline-none rounded-[5px]"
@@ -91,7 +134,7 @@ const CreateToken = () => {
                   className="text-[#CFCFD6] text-base font-normal ff_raleway"
                 >
                   Token Symbol
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
@@ -106,7 +149,7 @@ const CreateToken = () => {
                   className="text-[#CECFD7] text-base font-normal ff_raleway"
                 >
                   Token name
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] py-[17px] px-4 outline-none rounded-[5px]"
@@ -123,7 +166,7 @@ const CreateToken = () => {
                   className="text-[#CFCFD6] text-base font-normal ff_raleway"
                 >
                   Precession
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
@@ -138,7 +181,7 @@ const CreateToken = () => {
                   className="text-[#CECFD7] text-base font-normal ff_raleway"
                 >
                   URL (your company website)
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] py-[17px] px-4 outline-none rounded-[5px]"
@@ -155,7 +198,7 @@ const CreateToken = () => {
                   className="text-[#CFCFD6] text-base font-normal ff_raleway"
                 >
                   Description
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
@@ -170,7 +213,7 @@ const CreateToken = () => {
                   className="text-[#CECFD7] text-base font-normal ff_raleway"
                 >
                   Upload logo
-                </label>{" "}
+                </label>
                 <br />
                 <div className="flex items-center justify-between mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full px-4 text-[#B7B9C8]  outline-none rounded-[5px]">
                   <input
@@ -178,11 +221,15 @@ const CreateToken = () => {
                     className="  bg-[#121A45] w-1/3 text-[#B7B9C8]  py-[17px] outline-none rounded-[5px]"
                     type="text"
                     id="upload"
-                  />{" "}
-                  <button className="text-white text-base border border-[#172764]  rounded-[47px] py-1 px-5 font-semibold ff_raleway">
+                  />
+                  <button type="file" className="text-white text-base border border-[#172764]  rounded-[47px] py-1 px-5 font-semibold ff_raleway">
                     Chose file
                   </button>
                 </div>
+                {/* <input type="file" className="text-white" placeholder="chooose file" /> */}
+                {/* <input type="file" id="real-file" hidden="hidden" />
+                <span id="custom-text">No file chosen, yet.</span>
+                <button type="button" id="custom-button">CHOOSE A FILE</button> */}
               </div>
             </div>
             <div className="mt-8 ">
@@ -192,7 +239,7 @@ const CreateToken = () => {
                   className="text-[#CFCFD6] text-base font-normal ff_raleway"
                 >
                   Email Address
-                </label>{" "}
+                </label>
                 <br />
                 <input
                   className="mt-[10px] border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B7B9C8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
@@ -222,7 +269,7 @@ const CreateToken = () => {
           </button>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

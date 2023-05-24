@@ -88,11 +88,11 @@ const RecentTokens = () => {
                                         </div>
                                         <div className="flex items-center justify-between mt-8">
                                             <p className='text-base font-normal ff_raleway text-opacity-90 text-white'>{rslider.total}</p>
-                                            <p className='text-base font-semibold ff_raleway text-white'>{rslider.totalValue}</p>
+                                            <p className='text-base font-semibold ff_raleway text-white font_feature'>{rslider.totalValue}</p>
                                         </div>
                                         <div className="flex items-center justify-between mt-4">
-                                            <p className='text-base font-medium ff_raleway text-white text-opacity-90 underline'>{rslider.stakeToken}</p>
-                                            <p className='text-base font-medium ff_raleway text-white text-opacity-90 underline'>{rslider.claimDrop}</p>
+                                            <p className='text-base font-medium ff_raleway text-white text-opacity-80 underline'>{rslider.stakeToken}</p>
+                                            <p className='text-base font-medium ff_raleway text-white text-opacity-80 underline'>{rslider.claimDrop}</p>
                                         </div>
                                         <button onClick={() => setModal(true)} className='bg-gradient-to-r from-[#070380] to-[#4478F9] w-full py-3 text-center rounded-full border border-[#2D2B95] text-white ff_raleway font-medium text-base mt-8'>{rslider.btn}</button>
                                     </div>
@@ -105,8 +105,8 @@ const RecentTokens = () => {
                     <div
                         className={
                             modal === true
-                                ? "scale-100 ease-in-out duration-500 z-50 fixed top-[50%] sm:top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[95%] xl:w-[970px]"
-                                : "w-[95%] xl:w-[970px] scale-0 ease-in-out duration-500 z-50 rounded-[15px] fixed top-30 sm:top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"}>
+                                ? "scale-100 ease-in-out duration-500 z-50 absolute sm:fixed top-[-60%] sm:top-[50%] left-[50%] translate-x-[-50%] sm:translate-y-[-50%] w-[95%] xl:w-[970px]"
+                                : "w-[95%] xl:w-[970px] scale-0 ease-in-out duration-500 z-50 rounded-[15px] absolute sm:fixed top-30 sm:top-[50%] left-[50%] translate-x-[-50%] sm:translate-y-[-50%]"}>
                         <div className="bg-[#515C76] border border-[#747D91] rounded-[15px]">
                             <div className="grid grid-cols-1 lg:grid-cols-2 py-3 lg:pt-20 px-3 lg:px-10 lg:pb-10">
                                 <div className="flex flex-col justify-between">

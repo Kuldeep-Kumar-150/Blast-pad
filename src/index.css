@@ -113,6 +113,76 @@
   background: #4277F8 !important;
 }
 
+
+
+
+
+
+
+
+#custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+#snackbar {
+  visibility: hidden;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  border-radius: 7px;
+  padding: 16px;
+  position: absolute;
+  z-index: 1;
+  right: 43px;
+  bottom: 20px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
 @media (max-width:1023.98px) {
   .left_timeline_box::after {
     content: url("./assets/img/svg/timeline_circle.svg");
