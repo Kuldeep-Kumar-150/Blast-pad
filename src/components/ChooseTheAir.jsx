@@ -7,12 +7,12 @@ const ChooseTheAir = () => {
   return (
     <div className="frequentlyBg">
       <div className="container mx-auto px-3">
-        <div className="grid lg:grid-cols-2 grid-cols-1  gap-3 items-center py-16 md:py-20 lg:py-24">
+        <div className="grid lg:grid-cols-2 grid-cols-1  gap-3 items-center py-10 md:py-20 lg:py-24">
           <div>
-            <h2 className=" text-3xl md:text-4xl lg:text-[40px] text-white font-bold ff_raleway">
-              Air Drop Tokens{" "}
+            <h2 className="text-3xl text-center lg:text-start md:text-4xl lg:text-[40px] text-white font-bold ff_raleway">
+              Air Drop Tokens
             </h2>
-            <p className="text-[#B6B7C1] text-sm md:text-base font-normal mt-4 ff_raleway lg:pr-16">
+            <p className="text-[#B6B7C1] text-center lg:text-start text-sm md:text-base font-normal mt-4 ff_raleway lg:pr-16">
               In a crypto AirDrop, tokens or coins are usually distributed for
               free to eligible users who meet certain criteria, such as holding
               a specific amount of another cryptocurrency, completing certain
@@ -20,7 +20,7 @@ const ChooseTheAir = () => {
               are typically distributed directly to the users' wallets, and can
               be held or sold on exchanges
             </p>
-            <p className="text-[#B6B7C1] text-sm md:text-base font-normal mt-4 ff_raleway lg:pr-16">
+            <p className="text-[#B6B7C1] text-center lg:text-start text-sm md:text-base font-normal mt-4 ff_raleway lg:pr-16">
               AirDrops can be a way for crypto projects to build a community,
               incentivize user engagement, and generate buzz around their
               project.
@@ -52,7 +52,7 @@ const ChooseTheAir = () => {
                     : "rounded-[10px] flex justify-between py-7 lg:py-10 px-[23px] border border-[#1F254E] items-center w-full text-white text-xl font-bold ff_raleway "
                 }
               >
-                Air Drop Push{" "}
+                Air Drop Push
                 <svg
                   width="8"
                   height="12"
@@ -74,7 +74,7 @@ const ChooseTheAir = () => {
                     : "rounded-[10px] flex mt-5 justify-between py-7 lg:py-10 px-[23px] border border-[#1F254E] items-center w-full text-white text-xl font-bold ff_raleway "
                 }
               >
-                Air Drop Claim{" "}
+                Air Drop Claim
                 <svg
                   width="8"
                   height="12"
@@ -305,7 +305,7 @@ const ChooseTheAir = () => {
                 </button>
                 <div className="flex items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-white h-1 w-1"></div>{" "}
+                    <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
                       Choose one or both of the options below and select from
                       the drop down menus
@@ -819,7 +819,7 @@ const ChooseTheAir = () => {
                 </button>
                 <div className="flex items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-white h-1 w-1"></div>{" "}
+                    <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
                       Choose one or both of the options below and select from
                       the drop down menus

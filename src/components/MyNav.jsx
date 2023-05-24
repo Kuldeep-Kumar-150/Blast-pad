@@ -32,8 +32,8 @@ const MyNav = () => {
           <ul
             className={
               nav == true
-                ? "text-white gap-[20px] bg_blue_linear xl:hidden fixed flex flex-col ease-in-out duration-700 z-50 items-center justify-center top-0 left-0 w-full h-[100vh]"
-                : "bg_blue_linear text-white gap-[20px] xl:hidden fixed flex flex-col ease-in-out duration-700 left-[-100%] w-[50%] h-0 z-50 items-center justify-center top-[-50%]"
+                ? "text-white gap-[20px] bg_blue_linear xl:hidden rounded fixed flex flex-col ease-in-out duration-700 z-50 items-center justify-center top-0 left-0 w-full h-[100vh]"
+                : "bg_blue_linear text-white gap-[20px] xl:hidden rounded fixed flex flex-col ease-in-out duration-700 left-[-100%] w-[50%] h-0 z-50 items-center justify-center top-[-50%]"
             }
           >
             <li onClick={() => setNav(false)}>
@@ -167,7 +167,7 @@ const MyNav = () => {
                 </button>
               </div>
             </div>
-            <div onClick={() => setNav(!nav)} className="flex flex-col gap-1 ms-8 z-50 xl:hidden">
+            <div onClick={() => setNav(!nav)} className="flex flex-col gap-1 ms-8 z-50 xl:hidden cursor-pointer">
               <div className="bg_blue_linear h-1 w-7 rounded-md"></div>
               <div className="bg_blue_linear h-1 w-7 rounded-md"></div>
               <div className="bg_blue_linear h-1 w-7 rounded-md"></div>

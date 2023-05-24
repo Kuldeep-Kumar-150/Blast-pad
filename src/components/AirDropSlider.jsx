@@ -34,9 +34,9 @@ const AirDropSlider = () => {
         ],
     };
     return (
-        <section>
-            <div className="container mx-auto px-3 my-14">
-                <h5 className='text-white ff_raleway font-semibold text-[40px] text-center'>Claim AirDrop</h5>
+        <section className='flex flex-col justify-center items-center flex-grow'>
+            <div className="container mx-auto px-3 my-14 xl:my-0">
+                <h5 className='text-white ff_raleway font-semibold text-[30px] sm:text-[40px] text-center'>Claim AirDrop</h5>
                 <div className="relative">
                     <button onClick={() => myslider.current.slickPrev()} className="h-12 flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-[50%] translate-y-[-50%] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center">
                         <svg
@@ -68,7 +68,7 @@ const AirDropSlider = () => {
                             />
                         </svg>
                     </button>
-                    <Slider {...mSlider} ref={myslider} className='mt-14'>
+                    <Slider {...mSlider} ref={myslider} className='mt-7 sm:mt-14'>
                         {airDropS.map((m) => {
                             return (
                                 <div className="px-3">

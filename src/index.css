@@ -48,6 +48,12 @@
   background-size: cover;
 }
 
+.airdrop_bg_img {
+  background-image: url('./assets/img/png/token_airdrop_bg_img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .small_circle {
   background: linear-gradient(135deg,
       #ffffff 14.65%,
