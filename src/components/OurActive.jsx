@@ -39,7 +39,7 @@ const OurActive = () => {
       <div className="container mx-auto px-3 relative">
         <button
           onClick={() => first.current.slickPrev()}
-          className=" h-12 absolute flex max-[1300px]:hidden w-[52px] 2xl:-left-24 -left-14  top-64 bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
+          className=" h-12 flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-64 bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
         >
           <svg
             width="14"
@@ -56,7 +56,7 @@ const OurActive = () => {
         </button>
         <button
           onClick={() => first.current.slickNext()}
-          className="h-12  absolute  max-[1300px]:hidden flex 2xl:-right-24 -right-14  top-64 w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
+          className="h-12 flex max-[1260px]:hidden absolute 2xl:-right-24 -right-14  top-64 w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
         >
           <svg
             width="14"

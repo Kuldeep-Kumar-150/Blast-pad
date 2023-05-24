@@ -60,11 +60,9 @@ const StakeYourTokens = () => {
         {myCard
           .map((par) => {
             return (
-              <div className="w-full md:px-2">
+              <div className="w-full md:p-1">
                 <div
-                  className="card_shadow w-full text-white border   
-                ] border-[#232249] rounded-[15px]  p-4 backdrop-blur-[81.5px]"
-                >
+                  className="card_shadow w-full text-white border border-[#232249] rounded-[15px]  p-4 backdrop-blur-[81.5px]">
                   <div className="flex items-center">
                     <div className="h-[70px] w-[70px] bg-[#262752] flex items-center justify-center rounded-[10px]">
                       <img src={par.img} alt="metalImmage" />
