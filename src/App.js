@@ -8,6 +8,7 @@ import RoadMap from "./components/RoadMap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StakeYourTokens from "./components/StakeYourTokens";
+import CreateToken from "./components/CreateToken";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Frequently />
         <OurActive />
         <StakeYourTokens />
+        <CreateToken />
       </div>
     </>
   );
