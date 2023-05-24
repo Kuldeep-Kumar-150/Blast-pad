@@ -9,22 +9,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StakeYourTokens from "./components/StakeYourTokens";
 import CreateToken from "./components/CreateToken";
+import ChooseTheAir from "./components/ChooseTheAir";
 
 function App() {
   return (
     <>
-      <div class="overflow-hidden">
-        <div className="header_bg_img xl:flex xl:flex-col xl:min-h-[100vh]">
-          <MyNav />
-          <Header />
-        </div>
-        <BlockChain />
-        <RoadMap />
-        <Frequently />
-        <OurActive />
-        <StakeYourTokens />
-        <CreateToken />
-      </div>
+      <ChooseTheAir />
     </>
   );
 }
