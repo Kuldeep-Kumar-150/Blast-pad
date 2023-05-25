@@ -12,7 +12,7 @@ function MyFooter() {
               href="#"
             >
               <img height={48} width={48} src={navRocket} alt="navRocket" />
-              <span className="ff_inter text-[33px] font-medium text-white pl-[14px]">
+              <span className="ff_inter text-2xl md:text-[33px] font-medium text-white pl-[14px]">
                 BlastPad.io
               </span>
             </a>

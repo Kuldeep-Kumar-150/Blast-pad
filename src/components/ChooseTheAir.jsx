@@ -35,7 +35,6 @@ const ChooseTheAir = () => {
             />
           </div>
         </div>
-        {/* 2nd */}
         <div className=" pb-24 md:pb-36 lg:pb-44">
           <h2 className=" text-3xl md:text-4xl text-center lg:text-[40px] text-white font-bold ff_raleway">
             Choose The Air Drop Type
@@ -90,11 +89,10 @@ const ChooseTheAir = () => {
               </button>
             </div>
             <div className={color === 1 ? "md:w-2/3 block" : "hidden md:w-2/3"}>
-              {/* 1st */}
               <div className=" overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(1)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 1
                 </button>
@@ -106,7 +104,6 @@ const ChooseTheAir = () => {
                       to Air Drop
                     </p>
                   </div>
-
                   <img
                     className={
                       first === 1
@@ -149,7 +146,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -175,7 +172,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -187,17 +184,16 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              {/* 2nd */}
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(2)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 2
                 </button>
@@ -208,7 +204,6 @@ const ChooseTheAir = () => {
                       Choose the token you would like to Air Drop
                     </p>
                   </div>
-
                   <img
                     className={
                       first === 2
@@ -251,7 +246,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -277,7 +272,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -289,17 +284,16 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              {/* 3rd */}
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(3)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 3
                 </button>
@@ -354,7 +348,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -380,7 +374,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -392,7 +386,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -402,7 +396,7 @@ const ChooseTheAir = () => {
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(4)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 4
                 </button>
@@ -456,7 +450,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -482,7 +476,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -494,7 +488,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -504,7 +498,7 @@ const ChooseTheAir = () => {
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(5)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 5
                 </button>
@@ -558,7 +552,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -584,7 +578,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -596,7 +590,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -608,7 +602,7 @@ const ChooseTheAir = () => {
               <div className=" overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(1)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 6
                 </button>
@@ -663,7 +657,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -689,7 +683,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -701,7 +695,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -711,7 +705,7 @@ const ChooseTheAir = () => {
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(2)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 7
                 </button>
@@ -765,7 +759,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -791,7 +785,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -803,7 +797,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -813,7 +807,7 @@ const ChooseTheAir = () => {
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(3)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 8
                 </button>
@@ -868,7 +862,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -894,7 +888,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -906,7 +900,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -916,7 +910,7 @@ const ChooseTheAir = () => {
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(4)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 8
                 </button>
@@ -970,7 +964,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -996,7 +990,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -1008,7 +1002,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -1018,7 +1012,7 @@ const ChooseTheAir = () => {
               <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(5)}
-                  className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
+                  className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
                 >
                   Step 10
                 </button>
@@ -1072,7 +1066,7 @@ const ChooseTheAir = () => {
                       src={arrowImage}
                       height={7}
                       width={12}
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <form className=" flex flex-col md:flex-row  items-center mt-5">
@@ -1098,7 +1092,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
@@ -1110,7 +1104,7 @@ const ChooseTheAir = () => {
                         src={arrowImage}
                         height={7}
                         width={12}
-                        alt=""
+                        alt="image"
                       />
                     </div>
                   </div>

@@ -79,7 +79,7 @@ const RecentTokens = () => {
                                     <div className="px-[19px] py-6 border border-[#242246] bg-[#0F0933] rounded-2xl">
                                         <div className="flex items-center">
                                             <div className="h-[70px] w-[70px] flex items-center justify-center rounded-[10px] bg-[#29234A]">
-                                                <img className='rotate_animation' src={rslider.img} alt="" />
+                                                <img className='rotate_animation' src={rslider.img} alt="image" />
                                             </div>
                                             <div className='ms-4'>
                                                 <p className='text-white text-[20px] font-bold ff_raleway'>{rslider.headingName}</p>

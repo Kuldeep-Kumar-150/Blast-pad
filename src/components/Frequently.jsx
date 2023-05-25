@@ -8,7 +8,6 @@ const Frequently = () => {
         <h2 className="text-white font-bold text-2xl  md:text-4xl lg:text-[40px] ff_raleway">
           Frequently Asked Questions
         </h2>
-        {/* 1st */}
         <div
           onClick={() => setAccordian(1)}
           className="flex items-center cursor-pointer justify-between mt-12" >
@@ -42,8 +41,6 @@ const Frequently = () => {
           </span>
           volutpat arcu.
         </p>
-        {/* 2nd */}
-
         <div
           onClick={() => setAccordian(2)}
           className="flex items-center cursor-pointer justify-between mt-7"
@@ -78,8 +75,6 @@ const Frequently = () => {
           </span>
           volutpat arcu.
         </p>
-        {/* 3rd */}
-
         <div
           onClick={() => setAccordian(3)}
           className="flex items-center cursor-pointer justify-between mt-7"
@@ -114,7 +109,6 @@ const Frequently = () => {
           </span>
           volutpat arcu.
         </p>
-        {/* 4th */}
         <div
           onClick={() => setAccordian(4)}
           className="flex items-center cursor-pointer justify-between mt-7"
@@ -149,7 +143,6 @@ const Frequently = () => {
           </span>
           volutpat arcu.
         </p>
-        {/* 5th */}
         <div
           onClick={() => setAccordian(5)}
           className="flex items-center cursor-pointer justify-between mt-7"
@@ -184,7 +177,6 @@ const Frequently = () => {
           </span>
           volutpat arcu.
         </p>
-        {/* 6th */}
         <div
           onClick={() => setAccordian(6)}
           className="flex items-center cursor-pointer justify-between mt-7"
@@ -219,7 +211,6 @@ const Frequently = () => {
           </span>
           volutpat arcu.
         </p>
-        {/* 7th */}
         <div
           onClick={() => setAccordian(7)}
           className="flex items-center cursor-pointer justify-between mt-7"

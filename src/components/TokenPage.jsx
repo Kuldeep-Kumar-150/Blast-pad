@@ -11,7 +11,7 @@ const TokenPage = () => {
                 <RecentTokens />
             </div>
             <CreateToken />
-            <MyFooter/>
+            <MyFooter />
         </>
     )
 }

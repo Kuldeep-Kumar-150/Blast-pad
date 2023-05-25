@@ -1,1 +1,5 @@
 @import url("./mycss.css");
+.navStroke {
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: white;
+}
