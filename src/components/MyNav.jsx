@@ -167,11 +167,14 @@ const MyNav = () => {
                 </button>
               </div>
             </div>
-            <div onClick={() => setNav(!nav)} className="flex flex-col gap-1 ms-8 z-50 xl:hidden cursor-pointer">
-              <div className="bg_blue_linear h-1 w-7 rounded-md"></div>
-              <div className="bg_blue_linear h-1 w-7 rounded-md"></div>
-              <div className="bg_blue_linear h-1 w-7 rounded-md"></div>
-            </div>
+            <label className="label z-50 xl:hidden">
+              <input type="checkbox" />
+              <div onClick={() => setNav(!nav)} class="lines">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+              </div>
+            </label>
           </div>
         </div>
 

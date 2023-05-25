@@ -5,14 +5,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
-      // fontFamily: {
-      //   "Inter": ["Inter", ...defaultTheme.fontFamily.sans]
-      // },
-      // fontFamily: {
-      //   "Raleway": ["Raleway", ...defaultTheme.fontFamily.sans]
-      // }
-    },
+    extend: {},
   },
   plugins: [],
 }

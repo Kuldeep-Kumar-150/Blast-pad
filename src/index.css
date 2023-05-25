@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
-
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +19,6 @@
 .bg_blue_linear {
   background: linear-gradient(254.15deg, #4478f9 11.47%, #070380 86.69%);
 }
-
 
 .header_bg_img {
   background-image: url("./assets/img/png/header_bg_img.png");
@@ -119,13 +115,6 @@
   background: #4277F8 !important;
 }
 
-
-
-
-
-
-
-
 #custom-button {
   padding: 10px;
   color: white;
@@ -165,6 +154,73 @@
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+/* <---------CSS----------> */
+.label {
+  width: 100px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.lines span {
+  width: 40px;
+  height: 5px;
+  display: block;
+  margin: 5px 0;
+  background: white;
+  transition: 0.4s ease;
+  border-radius: 10px;
+}
+
+input[type="checkbox"]:checked~.lines .top {
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: right;
+  top: 8px;
+  right: 40px;
+}
+
+input[type="checkbox"]:checked~.lines .middle {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked~.lines .bottom {
+  position: absolute;
+  transform: rotate(45deg);
+  transform-origin: left;
+  top: 8px;
+  left: 28px;
+}
+
+.frequentlyBg {
+  background-image: url("../src/assets/img/png/frequentlyBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.font_feature {
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.card_shadow {
+  box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.1);
+  background: rgba(67, 119, 248, 0.07);
+}
+
+.showBtn {
+  background: linear-gradient(254.15deg, rgba(68, 120, 249, 0.1) 11.47%, rgba(7, 3, 128, 0.1) 86.69%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8.5px);
+}
+
+
 @keyframes fadein {
   from {
     bottom: 0;
@@ -186,6 +242,18 @@
   to {
     bottom: 0;
     opacity: 0;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .bg_blaspad_img {
+    background-image: url("./assets/img/png/rewards_bg_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .footer_bg_clouds {
+    background-image: url("../src//assets/img/png/footer_clodly_img.png");
   }
 }
 
