@@ -44,7 +44,7 @@ const ChooseTheAir = () => {
             <div className="md:w-1/3 relative z-10">
               <div className="bg-[#4377F8] blur-[146px] h-32 bottom-0 md:h-60 w-32 md:w-60 rounded-full absolute -z-10 md:bottom-12 left-1/6  "></div>
 
-              <button data-aos="zoom-in"
+              <button
                 onClick={() => setColor(1)}
                 className={
                   color === 1
@@ -66,7 +66,7 @@ const ChooseTheAir = () => {
                   />
                 </svg>
               </button>
-              <button data-aos="zoom-in-up"
+              <button
                 onClick={() => setColor(2)}
                 className={
                   color === 2

@@ -6,12 +6,14 @@ import MyFooter from "./MyFooter";
 const TokenPage = () => {
   return (
     <>
-      <div className="create_token_bg_img flex flex-col xl:min-h-[100vh]">
-        <MyNav />
-        <RecentTokens />
+      <div className="overflow-hidden">
+        <div className="create_token_bg_img flex flex-col xl:min-h-[100vh]">
+          <MyNav />
+          <RecentTokens />
+        </div>
+        <CreateToken />
+        <MyFooter />
       </div>
-      <CreateToken />
-      <MyFooter />
     </>
   );
 };
