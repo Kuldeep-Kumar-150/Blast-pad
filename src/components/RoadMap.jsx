@@ -11,11 +11,11 @@ const RoadMap = () => {
           Launch Your Project
         </h4>
         <img
-          className="  hidden lg:flex sticky top-0 left-1/2  -translate-x-2/4 z-30 w-44 h-44"
+          className="hidden lg:flex sticky top-0 left-1/2 translate-x-[-51%] z-30 w-44 h-44"
           src={rocketImg}
           alt="rocketImg"
         />
-        <div className="timeline_line relative">
+        <div className="timeline_line relative z-10">
           <div data-aos="fade-up-right" className="p-[21px] ms-16 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
             <h5 className="text-[20px] font-bold ff_raleway">Token</h5>
             <p className="text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]">

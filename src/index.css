@@ -109,6 +109,7 @@
   border: 3px dashed white;
   top: 102px;
   left: 20px;
+  z-index: -1;
 }
 
 .connect_wallet_btn:hover {
@@ -351,7 +352,7 @@
   .left_timeline_box::after {
     content: url("./assets/img/svg/timeline_left_img.svg");
     position: absolute;
-    right: -68.5% !important;
+    right: -69%;
     z-index: 10;
     top: 30%;
   }
@@ -359,7 +360,7 @@
   .right_timeline_box::after {
     content: url("./assets/img/svg/timeline_right_img.svg");
     position: absolute;
-    left: -68.5%;
+    left: -69%;
     z-index: 10;
     top: 30%;
   }
