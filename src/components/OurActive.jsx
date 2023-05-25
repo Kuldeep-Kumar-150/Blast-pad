@@ -4,7 +4,7 @@ import Slider from "react-slick";
 
 const OurActive = () => {
   const first = useRef();
-  // console.log(first)
+
   var settings = {
     dots: false,
     infinite: true,
@@ -40,7 +40,7 @@ const OurActive = () => {
       <div className="container mx-auto px-3 relative">
         <button
           onClick={() => first.current.slickPrev()}
-          className="h-12 flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-64 bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
+          className="h-12 flex ease-out duration-300 hover:bg-[#070380] hover:border-[#070380] max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-64 bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
         >
           <svg
             width="14"
@@ -57,7 +57,7 @@ const OurActive = () => {
         </button>
         <button
           onClick={() => first.current.slickNext()}
-          className="h-12 flex max-[1260px]:hidden absolute 2xl:-right-24 -right-14  top-64 w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
+          className="h-12 flex ease-out duration-300 hover:bg-[#070380] hover:border-[#070380] max-[1260px]:hidden absolute 2xl:-right-24 -right-14  top-64 w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
         >
           <svg
             width="14"
@@ -102,18 +102,18 @@ const OurActive = () => {
                       </div>
                     </div>
                     <div className="flex justify-between items-center mt-6">
-                      <button className="font-medium text-[11px] sm:text-sm text-white ff_raleway py-2 px-[10px] bg-[#11174D] rounded-[22px]">
+                      <button className="font-medium text-[11px] sm:text-sm text-white ease-in duration-300 hover:bg-[#4478F9] ff_raleway py-2 px-[10px] bg-[#11174D] rounded-[22px]">
                         {fun.btn}
                       </button>
-                      <button className="font-medium text-[11px] sm:text-sm text-white ff_raleway py-2 px-[10px] bg-[#11174D] rounded-[22px]">
+                      <button className="font-medium text-[11px] sm:text-sm text-white ease-in duration-300 hover:bg-[#4478F9] ff_raleway py-2 px-[10px] bg-[#11174D] rounded-[22px]">
                         {fun.btn1}
                       </button>
-                      <button className="font-medium text-[11px] sm:text-sm text-white ff_raleway py-2 px-[10px] bg-[#11174D] rounded-[22px]">
+                      <button className="font-medium text-[11px] sm:text-sm text-white ease-in duration-300 hover:bg-[#4478F9] ff_raleway py-2 px-[10px] bg-[#11174D] rounded-[22px]">
                         {fun.btn2}
                       </button>
                     </div>
                     <div className=" mt-8 rounded-[22px] bg-[#11164A]">
-                      <button className="py-2 px-7  text-sm font-medium ff_raleway bg-gradient-to-r from-[#070380] to-[#4478F9] rounded-s-[22px]">
+                      <button className="py-2 px-7 ease-in-out duration-300 hover:px-10 text-sm font-medium ff_raleway bg-gradient-to-r from-[#070380] to-[#4478F9] rounded-s-[22px]">
                         {fun.btn3}
                       </button>
                     </div>
@@ -126,7 +126,7 @@ const OurActive = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between mt-8">
-                      <button className="text-base font-semibold  bg-gradient-to-r from-[#070380] to-[#4478F9] ff_raleway py-2 px-10 md:py-3 md:px-[57px] rounded-[32px]">
+                      <button className="text-base font-semibold ease-in duration-300 hover:scale-90 bg-gradient-to-r from-[#070380] to-[#4478F9] ff_raleway py-2 px-10 md:py-3 md:px-[57px] rounded-[32px]">
                         {fun.btn5}
                       </button>
                       <button className="flex items-center gap-1 font-medium  ff_inter text-base ">
@@ -140,7 +140,7 @@ const OurActive = () => {
             .slice(0, 6)}
         </Slider>
         <div className="text-center">
-          <button className=" text-[12px] py-3 px-8 md:text-base font-semibold ff_raleway text-white md:py-4 md:px-16  border border-[#313558] rounded-[32px] showBtn">
+          <button className="ease-in duration-300 hover:bg-[#4478F9] hover:border-[#4478F9] text-[12px] py-3 px-8 md:text-base font-semibold ff_raleway text-white md:py-4 md:px-16  border border-[#313558] rounded-[32px] showBtn">
             Show All Tokens Available to be Staked
           </button>
         </div>

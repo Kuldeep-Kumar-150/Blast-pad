@@ -1,14 +1,14 @@
 import React from "react";
 import blasepad_clouds from "../assets/img/png/blaspad_bones_clouds.png";
 import blassbones_img from "../assets/img/png/bonuspool_man_img.png";
-import bones_img1 from '../assets/img/png/bonus_img1.png'
+import bones_img1 from "../assets/img/png/bonus_img1.png";
 function BlaspadBonesSection() {
   return (
-    <section className="bg_blaspad_img bg-no-repeat bg-cover xl:pt-[108px] lg:pt-[100px] pt-[50px] relative">
-      <div className="bg-[#4377F8] blur-[120px]  min-w-[50px] xl:w-[221px] lg:w-[130px] w-[80px] h-[278px] absolute top-0 right-0"></div>
-      <div className="bg-[#4377F8] blur-[120px]  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute top-0 left-0"></div>
-      <div className="bg-[#4377F8] blur-[120px]  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute top-[90%] left-0"></div>
-      <div className="bg-[#4377F8] blur-[120px]  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute top-[100%] right-0"></div>
+    <section className="bg_blaspad_img bg-no-repeat bg-cover xl:pt-[108px] lg:pt-[100px] pt-[50px] relative z-10">
+      <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[221px] lg:w-[130px] w-[80px] h-[278px] absolute top-0 right-0"></div>
+      <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute top-0 left-0"></div>
+      <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute top-[50%] left-0"></div>
+      <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute -bottom-[20%] right-0"></div>
       <div className="container mx-auto px-3">
         <div className="md:flex-row  md:justify-between flex-col items-center flex ">
           <div className=" md:w-5/12 w-8/12 ">
@@ -41,7 +41,6 @@ function BlaspadBonesSection() {
           </div>
         </div>
 
-
         <div className="pt-16">
           <h2 className=" ff_raleway font-bold md:text-[40px] sm:text-[30px] text-[29px]   text-white text-center md;leading-[46px]">
             Stake your Blastpad tokens for
@@ -57,17 +56,17 @@ function BlaspadBonesSection() {
                 euismod feugiat sed vestibulum fermentum tempor.
               </p>
               <div className="flex sm:justify-center">
-                <div className="z-30 rounded-xl bg-[#030739] w-[130px] h-[90px] lg:h-[114px] items-center flex justify-center mt-6">
+                <div className="z-30 rounded-xl ease-out duration-300 hover:bg-[#4377F8] bg-[#030739] w-[130px] h-[90px] lg:h-[114px] items-center flex justify-center mt-6">
                   <h2 className=" ff_raleway font-semibold text-[25px] lg:text-[40px] text-white">
                     1m
                   </h2>
                 </div>
-                <div className="z-30 rounded-xl bg-[#030739] w-[130px] h-[90px] lg:h-[114px] items-center flex justify-center mt-6 ms-6">
-                  <h2 className=" ff_raleway font-semibold text-[25px] lg-text-[40px] text-white">
+                <div className="z-30 rounded-xl ease-out duration-300 hover:bg-[#4377F8] bg-[#030739] w-[130px] h-[90px] lg:h-[114px] items-center flex justify-center mt-6 ms-6">
+                  <h2 className=" ff_raleway font-semibold text-[25px] lg:text-[40px] text-white">
                     5m
                   </h2>
                 </div>
-                <div className="z-30 rounded-xl bg-[#030739] w-[130px] lg:h-[114px] h-[90px] items-center flex justify-center mt-6 ms-6">
+                <div className="z-30 rounded-xl ease-out duration-300 hover:bg-[#4377F8] bg-[#030739] w-[130px] lg:h-[114px] h-[90px] items-center flex justify-center mt-6 ms-6">
                   <h2 className=" ff_raleway font-semibold text-[25px] lg:text-[40px] text-white">
                     10m
                   </h2>
@@ -93,15 +92,15 @@ function BlaspadBonesSection() {
                     />
                   </div>
                 </div>
-                <div className="bg-[#4377F8] lg:w-[105px] w-[70px] sm:w-[90px] rounded-[22px] flex  justify-center items-center lg:mt-6 mt-4 sm:h-[36px] h-[30px]">
-                  <h3 className=" ff_raleway font-semibold  text-xl text-white flex items-center">
-                    <div className="bg-white h-2 w-2 rounded-3xl mr-1 sm:mr-2 lg:mr-3"></div> 1m
+                <div className="ease-in-out duration-300 hover:scale-105 bg-[#4377F8] lg:w-[105px] w-[70px] sm:w-[90px] rounded-[22px] flex  justify-center items-center lg:mt-6 mt-4 sm:h-[36px] h-[30px]">
+                  <h3 className="  ff_raleway font-semibold  text-xl text-white flex items-center">
+                    <div className=" bg-white h-2 w-2 rounded-3xl mr-1 sm:mr-2 font_feature lg:mr-3"></div>{" "}
+                    1m
                   </h3>
                 </div>
               </div>
               <div className="w-4/12 pr-3">
                 <div className="flex items-end">
-
                   <div>
                     <h3 className=" ff_raleway font-normal xl:text-2xl text-[#4377F8] mb-4">
                       Bonus
@@ -118,9 +117,10 @@ function BlaspadBonesSection() {
                     />
                   </div>
                 </div>
-                <div className="bg-[#4377F8] lg:w-[105px] w-[70px] sm:w-[90px] rounded-[22px] flex  justify-center items-center lg:mt-6 mt-4 sm:h-[36px] h-[30px]">
-                  <h3 className=" ff_raleway font-semibold  text-xl text-white flex items-center">
-                    <div className="bg-white h-2 w-2 rounded-3xl mr-1 sm:mr-2 lg:mr-3"></div> 5m
+                <div className="ease-in-out duration-300 hover:scale-105 bg-[#4377F8] lg:w-[105px] w-[70px] sm:w-[90px] rounded-[22px] flex  justify-center items-center lg:mt-6 mt-4 sm:h-[36px] h-[30px]">
+                  <h3 className="  ff_raleway font-semibold  text-xl text-white flex items-center">
+                    <div className=" bg-white h-2 w-2 rounded-3xl mr-1 sm:mr-2 font_feature lg:mr-3"></div>{" "}
+                    5m
                   </h3>
                 </div>
               </div>
@@ -142,9 +142,9 @@ function BlaspadBonesSection() {
                     />
                   </div>
                 </div>
-                <div className="bg-[#4377F8] lg:w-[105px] w-[70px] sm:w-[90px] rounded-[22px] flex  justify-center items-center lg:mt-6 mt-4 sm:h-[36px] h-[30px]">
-                  <h3 className=" ff_raleway font-semibold  text-xl text-white flex items-center">
-                    <div className="bg-white h-2 w-2 rounded-3xl mr-1 sm:mr-2 lg:mr-3"></div>
+                <div className="ease-in-out duration-300 hover:scale-105 bg-[#4377F8] lg:w-[105px] w-[70px] sm:w-[90px] rounded-[22px] flex  justify-center items-center lg:mt-6 mt-4 sm:h-[36px] h-[30px]">
+                  <h3 className="  ff_raleway font-semibold  text-xl text-white flex items-center">
+                    <div className=" bg-white h-2 w-2 rounded-3xl mr-1 sm:mr-2 font_feature lg:mr-3"></div>
                     10m
                   </h3>
                 </div>

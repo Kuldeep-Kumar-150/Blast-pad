@@ -226,10 +226,7 @@ const CreateToken = () => {
                     Chose file
                   </button>
                 </div>
-                {/* <input type="file" className="text-white" placeholder="chooose file" /> */}
-                {/* <input type="file" id="real-file" hidden="hidden" />
-                <span id="custom-text">No file chosen, yet.</span>
-                <button type="button" id="custom-button">CHOOSE A FILE</button> */}
+              
               </div>
             </div>
             <div className="mt-8 ">
