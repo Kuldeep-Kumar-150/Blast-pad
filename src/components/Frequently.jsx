@@ -3,14 +3,16 @@ import arrowImage from "../assets/img/svg/arrowImage.svg";
 const Frequently = () => {
   const [accordian, setAccordian] = useState(1);
   return (
-    <div className="frequentlyBg py-16 md:py-24 lg:py-36">
+    <div className="frequentlyBg py-16 md:py-24 lg:py-36 relative">
+      <div className="bg-[#4377F8] w-48 h-48 blur-[175px] absolute right-0  top-0 -z-10"></div>
       <div className="container mx-auto px-3">
         <h2 className="text-white font-bold text-2xl  md:text-4xl lg:text-[40px] ff_raleway">
           Frequently Asked Questions
         </h2>
         <div
           onClick={() => setAccordian(1)}
-          className="flex items-center cursor-pointer justify-between mt-12" >
+          className="flex items-center cursor-pointer justify-between mt-12"
+        >
           <h2 className="  text-[#E6E6EA] text-xl md:text-2xl ff_raleway font-medium">
             Q1. What is a BlastPad.io?
           </h2>
@@ -33,8 +35,8 @@ const Frequently = () => {
               : "hidden text-[#B5B6C1] ff_raleway border-b border-[#4377F8] pb-4  font-normal text-base mr-5 md:mr-20 md:ml-10 mt-4 "
           }
         >
-          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus
-          eu est euismod pulvinar. Condimentum
+          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus eu
+          est euismod pulvinar. Condimentum
           <span className="md:block">
             metus tincidunt curabitur nulla eros imperdiet vel amet amet. Ac
             lacus dolor rutrum in erat lobortis rhoncus
@@ -67,8 +69,8 @@ const Frequently = () => {
               : "hidden text-[#B5B6C1] ff_raleway border-b border-[#4377F8] pb-4  font-normal text-base mr-5 md:mr-20 md:ml-10 mt-4 "
           }
         >
-          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus
-          eu est euismod pulvinar. Condimentum
+          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus eu
+          est euismod pulvinar. Condimentum
           <span className="md:block">
             metus tincidunt curabitur nulla eros imperdiet vel amet amet. Ac
             lacus dolor rutrum in erat lobortis rhoncus
@@ -101,8 +103,8 @@ const Frequently = () => {
               : "hidden text-[#B5B6C1] ff_raleway border-b border-[#4377F8] pb-4  font-normal text-base mr-5 md:mr-20 md:ml-10 mt-4 "
           }
         >
-          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus
-          eu est euismod pulvinar. Condimentum
+          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus eu
+          est euismod pulvinar. Condimentum
           <span className="md:block">
             metus tincidunt curabitur nulla eros imperdiet vel amet amet. Ac
             lacus dolor rutrum in erat lobortis rhoncus
@@ -135,8 +137,8 @@ const Frequently = () => {
               : "hidden text-[#B5B6C1] ff_raleway border-b border-[#4377F8] pb-4  font-normal text-base mr-5 md:mr-20 md:ml-10 mt-4 "
           }
         >
-          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus
-          eu est euismod pulvinar. Condimentum
+          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus eu
+          est euismod pulvinar. Condimentum
           <span className="md:block">
             metus tincidunt curabitur nulla eros imperdiet vel amet amet. Ac
             lacus dolor rutrum in erat lobortis rhoncus
@@ -169,8 +171,8 @@ const Frequently = () => {
               : "hidden text-[#B5B6C1] ff_raleway border-b border-[#4377F8] pb-4  font-normal text-base mr-5 md:mr-20 md:ml-10 mt-4 "
           }
         >
-          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus
-          eu est euismod pulvinar. Condimentum
+          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus eu
+          est euismod pulvinar. Condimentum
           <span className="md:block">
             metus tincidunt curabitur nulla eros imperdiet vel amet amet. Ac
             lacus dolor rutrum in erat lobortis rhoncus
@@ -203,8 +205,8 @@ const Frequently = () => {
               : "hidden text-[#B5B6C1] ff_raleway border-b border-[#4377F8] pb-4  font-normal text-base mr-5 md:mr-20 md:ml-10 mt-4 "
           }
         >
-          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus
-          eu est euismod pulvinar. Condimentum
+          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus eu
+          est euismod pulvinar. Condimentum
           <span className="md:block">
             metus tincidunt curabitur nulla eros imperdiet vel amet amet. Ac
             lacus dolor rutrum in erat lobortis rhoncus
@@ -237,8 +239,8 @@ const Frequently = () => {
               : "hidden text-[#B5B6C1] ff_raleway border-b border-[#4377F8] pb-4  font-normal text-base mr-5 md:mr-20 md:ml-10 mt-4 "
           }
         >
-          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus
-          eu est euismod pulvinar. Condimentum
+          Lorem ipsum dolor sit amet consectetur. Mattis morbi leo amet lacus eu
+          est euismod pulvinar. Condimentum
           <span className="md:block">
             metus tincidunt curabitur nulla eros imperdiet vel amet amet. Ac
             lacus dolor rutrum in erat lobortis rhoncus

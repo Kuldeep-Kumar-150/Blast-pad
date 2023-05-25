@@ -39,26 +39,28 @@
 }
 
 .create_token_bg_img {
-  background-image: url('./assets/img/png/create-token-bg-img.png');
+  background-image: url("./assets/img/png/create-token-bg-img.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .airdrop_bg_img {
-  background-image: url('./assets/img/png/token_airdrop_bg_img.png');
+  background-image: url("./assets/img/png/token_airdrop_bg_img.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .small_circle {
-  background: linear-gradient(135deg,
-      #ffffff 14.65%,
-      rgba(255, 255, 255, 0.97) 16.07%,
-      rgba(255, 255, 255, 0.63) 33.75%,
-      rgba(255, 255, 255, 0.36) 48.6%,
-      rgba(255, 255, 255, 0.16) 61.32%,
-      rgba(255, 255, 255, 0.04) 71.22%,
-      rgba(255, 255, 255, 0) 76.88%);
+  background: linear-gradient(
+    135deg,
+    #ffffff 14.65%,
+    rgba(255, 255, 255, 0.97) 16.07%,
+    rgba(255, 255, 255, 0.63) 33.75%,
+    rgba(255, 255, 255, 0.36) 48.6%,
+    rgba(255, 255, 255, 0.16) 61.32%,
+    rgba(255, 255, 255, 0.04) 71.22%,
+    rgba(255, 255, 255, 0) 76.88%
+  );
   background-blend-mode: overlay;
   mix-blend-mode: overlay;
   height: 42px;
@@ -96,7 +98,11 @@
 }
 
 .timeline_cards {
-  background: linear-gradient(0deg, rgba(67, 119, 248, 0.07), rgba(67, 119, 248, 0.07)),
+  background: linear-gradient(
+      0deg,
+      rgba(67, 119, 248, 0.07),
+      rgba(67, 119, 248, 0.07)
+    ),
     linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.1);
@@ -112,7 +118,7 @@
 }
 
 .connect_wallet_btn:hover {
-  background: #4277F8 !important;
+  background: #4277f8 !important;
 }
 
 #custom-button {
@@ -178,7 +184,7 @@
   border-radius: 10px;
 }
 
-input[type="checkbox"]:checked~.lines .top {
+input[type="checkbox"]:checked ~ .lines .top {
   position: absolute;
   transform: rotate(-45deg);
   transform-origin: right;
@@ -186,12 +192,12 @@ input[type="checkbox"]:checked~.lines .top {
   right: 40px;
 }
 
-input[type="checkbox"]:checked~.lines .middle {
+input[type="checkbox"]:checked ~ .lines .middle {
   transform: translateX(-10px);
   opacity: 0;
 }
 
-input[type="checkbox"]:checked~.lines .bottom {
+input[type="checkbox"]:checked ~ .lines .bottom {
   position: absolute;
   transform: rotate(45deg);
   transform-origin: left;
@@ -205,14 +211,14 @@ input[type="checkbox"]:checked~.lines .bottom {
   position: absolute;
   display: none;
 
-  &+label {
+  & + label {
     position: relative;
     cursor: pointer;
     padding: 0;
   }
 
-  &+label:before {
-    content: '';
+  & + label:before {
+    content: "";
     margin-right: 10px;
     display: inline-block;
     vertical-align: text-top;
@@ -220,28 +226,23 @@ input[type="checkbox"]:checked~.lines .bottom {
     height: 20px;
     border-radius: 5px;
     border: 1px solid #293261;
-    background: #111A4F;
+    background: #111a4f;
   }
 
-  &:focus+label:before {
+  &:focus + label:before {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
   }
 
-  &:checked+label:after {
-    content: '';
+  &:checked + label:after {
+    content: "";
     position: absolute;
     left: 7px;
     top: 9px;
     background: white;
     width: 2px;
     height: 2px;
-    box-shadow:
-      2px 0 0 white,
-      4px 0 0 white,
-      4px -2px 0 white,
-      4px -4px 0 white,
-      4px -6px 0 white,
-      4px -8px 0 white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
     transform: rotate(45deg);
   }
 }
@@ -264,7 +265,11 @@ input[type="checkbox"]:checked~.lines .bottom {
 }
 
 .showBtn {
-  background: linear-gradient(254.15deg, rgba(68, 120, 249, 0.1) 11.47%, rgba(7, 3, 128, 0.1) 86.69%);
+  background: linear-gradient(
+    254.15deg,
+    rgba(68, 120, 249, 0.1) 11.47%,
+    rgba(7, 3, 128, 0.1) 86.69%
+  );
   border: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(8.5px);
 }
@@ -320,7 +325,7 @@ input[type="checkbox"]:checked~.lines .bottom {
   }
 }
 
-@media (max-width:1023.98px) {
+@media (max-width: 1023.98px) {
   .left_timeline_box::after {
     content: url("./assets/img/svg/timeline_circle.svg");
     position: absolute;
@@ -338,7 +343,7 @@ input[type="checkbox"]:checked~.lines .bottom {
   }
 }
 
-@media (min-width:1023.98px) {
+@media (min-width: 1023.98px) {
   .left_timeline_box::after {
     content: url("./assets/img/svg/timeline_left_img.svg");
     position: absolute;
