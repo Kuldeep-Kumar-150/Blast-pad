@@ -35,6 +35,7 @@ const ChooseTheAir = () => {
             />
           </div>
         </div>
+
         <div className=" pb-24 md:pb-36 lg:pb-44">
           <h2 className=" text-3xl md:text-4xl text-center lg:text-[40px] text-white font-bold ff_raleway">
             Choose The Air Drop Type

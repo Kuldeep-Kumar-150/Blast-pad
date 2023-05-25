@@ -14,7 +14,7 @@ const BlockChain = () => {
         <div className="flex flex-col lg:grid lg:grid-cols-2 items-center">
           <div className="w-[80%]" data-aos="fade-up-right">
             <img
-              className="w-[80%] lg:w-full mx-auto lg:mx-0 rotate_animation"
+              className="w-full mx-auto md:w-4/5 lg:w-full lg:mx-0 rotate_animation"
               src={proTon}
               alt="proTon"
             />

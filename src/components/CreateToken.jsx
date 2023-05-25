@@ -4,7 +4,7 @@ const CreateToken = () => {
   const initialvalue = {
     name: "",
     password: "",
-  }
+  };
   const [formValue, setformValue] = useState(initialvalue);
 
   const handleInputChange = (event) => {
@@ -13,14 +13,18 @@ const CreateToken = () => {
   };
   const formSubmit = (e) => {
     e.preventDefault();
-    console.log(formValue)
-    setformValue(initialvalue)
+    console.log(formValue);
+    setformValue(initialvalue);
+  };
+  {
+    /*SUBMIT TYPE POPUP OTIFICATION*/
   }
-  {/*SUBMIT TYPE POPUP OTIFICATION*/ }
   function myFunction() {
     var x = document.getElementById("snackbar");
     x.className = "show";
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function () {
+      x.className = x.className.replace("show", "");
+    }, 3000);
   }
 
   return (
@@ -43,7 +47,10 @@ const CreateToken = () => {
                   Log ID
                 </label>
                 <br />
-                <input value={formValue.name} name="name" onChange={handleInputChange}
+                <input
+                  value={formValue.name}
+                  name="name"
+                  onChange={handleInputChange}
                   className="mt-3 border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#B8BAC8] text-base font-normal ff_raleway py-[17px] px-4 outline-none rounded-[5px]"
                   placeholder="xyn@explaim.com"
                   type="text"
@@ -58,7 +65,10 @@ const CreateToken = () => {
                   Password
                 </label>
                 <br />
-                <input value={formValue.password} name="password" onChange={handleInputChange}
+                <input
+                  value={formValue.password}
+                  name="password"
+                  onChange={handleInputChange}
                   className="mt-3 border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#092E8B] py-[17px] px-4 outline-none rounded-[5px]"
                   placeholder=". . . . . . . . . "
                   type="password"
@@ -66,7 +76,11 @@ const CreateToken = () => {
                 />
               </div>
             </div>
-            <button onClick={() => myFunction()} type="submit" className="font-normal ease-in-out duration-300 hover:scale-95 text-base text-white py-3 px-7 ff_raleway mt-5 rounded-[32px] bg-gradient-to-r from-[#070380] to-[#4478F9]">
+            <button
+              onClick={() => myFunction()}
+              type="submit"
+              className="font-normal ease-in-out duration-300 hover:scale-95 text-base text-white py-3 px-7 ff_raleway mt-5 rounded-[32px] bg-gradient-to-r from-[#070380] to-[#4478F9]"
+            >
               Log in
             </button>
           </form>
@@ -205,11 +219,14 @@ const CreateToken = () => {
                     type="text"
                     id="upload"
                   />
-                  <button type="file" className="text-white text-base border border-[#172764]  rounded-[47px] py-1 px-5 font-semibold ff_raleway">
+
+                  <button
+                    type="file"
+                    className="text-white text-base border border-[#172764]  rounded-[47px] py-1 px-5 font-semibold ff_raleway"
+                  >
                     Chose file
                   </button>
                 </div>
-
               </div>
             </div>
             <div className="mt-8 ">
@@ -230,8 +247,19 @@ const CreateToken = () => {
               </div>
             </div>
             <div className="mt-4">
-              <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" />
-              <label for="styled-checkbox-1" className="text-white md:mt-0  text-base font-medium ff_raleway">A flat fee of 1XPR will be change for creating your token as a one time fee.</label>
+              <input
+                class="styled-checkbox"
+                id="styled-checkbox-1"
+                type="checkbox"
+                value="value1"
+              />
+              <label
+                for="styled-checkbox-1"
+                className="text-white md:mt-0  text-base font-medium ff_raleway"
+              >
+                A flat fee of 1XPR will be change for creating your token as a
+                one time fee.
+              </label>
             </div>
           </form>
           <button className="mt-9 py-3 px-5 md:py-4 md:px-9 bg-transparent ease-in-out duration-300 hover:bg-[#1C2F6F] hover:border-[#1C2F6F] border-white border rounded-[32px] text-white text-sm md:text-lg font-semibold ff_raleway">
@@ -239,7 +267,7 @@ const CreateToken = () => {
           </button>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
