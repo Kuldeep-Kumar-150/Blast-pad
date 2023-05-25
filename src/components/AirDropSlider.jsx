@@ -38,7 +38,7 @@ const AirDropSlider = () => {
             <div className="container mx-auto px-3 my-14 xl:my-0">
                 <h5 className='text-white ff_raleway font-semibold text-[30px] sm:text-[40px] text-center'>Claim AirDrop</h5>
                 <div className="relative">
-                    <button onClick={() => myslider.current.slickPrev()} className="h-12 flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-[50%] translate-y-[-50%] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center">
+                    <button onClick={() => myslider.current.slickPrev()} className="h-12 ease-in-out duration-300 hover:bg-[#4478F9] flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-[50%] translate-y-[-50%] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center">
                         <svg
                             width="14"
                             height="24"
@@ -53,7 +53,7 @@ const AirDropSlider = () => {
                         </svg>
                     </button>
                     <button onClick={() => myslider.current.slickNext()}
-                        className="h-12 flex max-[1260px]:hidden absolute 2xl:-right-24 -right-14  top-[50%] translate-y-[-50%] w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
+                        className="h-12 ease-in-out duration-300 hover:bg-[#4478F9] flex max-[1260px]:hidden absolute 2xl:-right-24 -right-14  top-[50%] translate-y-[-50%] w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
                     >
                         <svg
                             width="14"
@@ -72,7 +72,7 @@ const AirDropSlider = () => {
                         {airDropS.map((m) => {
                             return (
                                 <div className="px-3">
-                                    <div className="border rounded-2xl border-[#222851] bg-[#0A103D] p-5">
+                                    <div className="border rounded-2xl hover:bg-[#0B0C28] ease-in-out duration-300 border-[#222851] bg-[#0A103D] p-5">
                                         <div className="flex items-center">
                                             <div className="flex items-center justify-center w-[70px] h-[70px] bg-[#232852] rounded-[10px]">
                                                 <img src={m.img} alt="image" />
@@ -91,8 +91,8 @@ const AirDropSlider = () => {
                                             <p className='text-base font-semibold ff_raleway text-white font_feature'>{m.price}</p>
                                         </div>
                                         <div className="flex gap-4 mt-8">
-                                            <button className='text-base border border-[#2D304E] rounded-full font-medium ff_raleway text-white text-opacity-80 py-3 w-full'>{m.btn1}</button>
-                                            <button className='w-full text-base font-semibold text-white ff_raleway py-3 bg_blue_linear rounded-full'>{m.btn2}</button>
+                                            <button className='text-base border hover:scale-[90%] ease-in-out duration-300 border-[#2D304E] rounded-full font-medium ff_raleway text-white text-opacity-80 py-3 w-full'>{m.btn1}</button>
+                                            <button className='w-full text-base hover:scale-[90%] ease-in-out duration-300 font-semibold text-white ff_raleway py-3 bg_blue_linear rounded-full'>{m.btn2}</button>
                                         </div>
                                     </div>
                                 </div>

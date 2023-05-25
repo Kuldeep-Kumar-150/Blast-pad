@@ -12,23 +12,23 @@ const RoadMap = () => {
                     <div className="p-[21px] ms-16 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
                         <h5 className='text-[20px] font-bold ff_raleway'>Token</h5>
                         <p className='text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]'>A token is a sequence of characters that represents a unit of meaning or syntax in a programming language.</p>
-                        <a className='px-4 connect_wallet_btn py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
+                        <a className='px-4 hover:scale-95 ease-in-out duration-300 py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
                     </div>
                     <div className="p-[21px] ms-16 mt-7 lg:mt-0 lg:w-[32%] text-white timeline_cards rounded-[15px] lg:ms-auto right_timeline_box relative">
                         <h5 className='text-[20px] font-bold ff_raleway'>Airdrop</h5>
                         <p className='text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]'>Airdrops are a marketing strategy used by cryptocurrency projects to distribute tokens to a large number of people.</p>
-                        <a className='px-4 connect_wallet_btn py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
+                        <a className='px-4 hover:scale-95 ease-in-out duration-300 py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
                     </div>
                     <div className="p-[21px] hidden lg:block ms-16 mt-7 lg:mt-0 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
                         <h5 className='text-[20px] font-bold ff_raleway'>Staking</h5>
                         <p className='text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]'>Staking is a process by which users hold cryptocurrency in a wallet to support the operations of a blockchain network.</p>
-                        <a className='px-4 connect_wallet_btn py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
+                        <a className='px-4 hover:scale-95 ease-in-out duration-300 py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
                     </div>
                 </div>
                 <div className="p-[21px] lg:hidden ms-16 mt-7 lg:mt-0 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
                     <h5 className='text-[20px] font-bold ff_raleway'>Staking</h5>
                     <p className='text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]'>Staking is a process by which users hold cryptocurrency in a wallet to support the operations of a blockchain network.</p>
-                    <a className='px-4 connect_wallet_btn py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
+                    <a className='px-4 hover:scale-95 ease-in-out duration-300 py-2 inline-block bg_blue_linear rounded-full mt-6' href="#">Read more</a>
                 </div>
                 <img className=' absolute bottom-[-35%] left-0' src={roadMapCloud} alt="roadMapCloud" />
             </div>

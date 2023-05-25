@@ -23,23 +23,6 @@ const CreateToken = () => {
     setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
   }
 
-
-  // const realFileBtn = document.getElementById("real-file");
-  // const customBtn = document.getElementById("custom-button");
-  // const customTxt = document.getElementById("custom-text");
-  // customBtn.addEventListener("click", function () {
-  //   realFileBtn.click();
-  // });
-  // realFileBtn.addEventListener("change", function () {
-  //   if (realFileBtn.value) {
-  //     customTxt.innerHTML = realFileBtn.value.match(
-  //       /[\/\\]([\w\d\s\.\-\(\)]+)$/
-  //     )[1];
-  //   }
-  //   else {
-  //     customTxt.innerHTML = "no files"
-  //   }
-  // })
   return (
     <div className="frequentlyBg py-16 md:py-28 lg:py-40">
       <div className="container mx-auto px-3">
@@ -47,10 +30,10 @@ const CreateToken = () => {
           Create Token
         </h2>
         <div className="relative mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
-          <button className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
+          <button className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
             Step 2
           </button>
-          <form onSubmit={formSubmit}>
+          <form onSubmit={formSubmit} autoComplete="off">
             <div className="mt-4 md:flex items-center gap-5">
               <div className="w-full">
                 <label
@@ -75,7 +58,7 @@ const CreateToken = () => {
                   Password
                 </label>
                 <br />
-                <input required value={formValue.password} name="password" onChange={handleInputChange}
+                <input value={formValue.password} name="password" onChange={handleInputChange}
                   className="mt-3 border-[1.2px] border-[#293058] bg-[#121A45] w-full text-[#092E8B] py-[17px] px-4 outline-none rounded-[5px]"
                   placeholder=". . . . . . . . . "
                   type="password"
@@ -83,7 +66,7 @@ const CreateToken = () => {
                 />
               </div>
             </div>
-            <button onClick={() => myFunction()} type=" submit" className="font-normal text-base text-white py-3 px-7 ff_raleway mt-5 rounded-[32px] bg-gradient-to-r from-[#070380] to-[#4478F9]">
+            <button onClick={() => myFunction()} type="submit" className="font-normal ease-in-out duration-300 hover:scale-95 text-base text-white py-3 px-7 ff_raleway mt-5 rounded-[32px] bg-gradient-to-r from-[#070380] to-[#4478F9]">
               Log in
             </button>
           </form>
@@ -91,7 +74,7 @@ const CreateToken = () => {
           <div id="snackbar">your form was successfully submitted</div>
         </div>
         <div className=" mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
-          <button className="py-[9px] px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
+          <button className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
             Step 2
           </button>
           <form className="mt-4 ">
@@ -226,10 +209,6 @@ const CreateToken = () => {
                     Chose file
                   </button>
                 </div>
-                {/* <input type="file" className="text-white" placeholder="chooose file" /> */}
-                {/* <input type="file" id="real-file" hidden="hidden" />
-                <span id="custom-text">No file chosen, yet.</span>
-                <button type="button" id="custom-button">CHOOSE A FILE</button> */}
               </div>
             </div>
             <div className="mt-8 ">
@@ -249,22 +228,12 @@ const CreateToken = () => {
                 />
               </div>
             </div>
-            <div className=" flex flex-col md:flex-row  items-center mt-4">
-              <input
-                className="h-5 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#111A4E] appearance-none"
-                type="checkbox"
-                id="checkb"
-              />
-              <label
-                htmlFor="checkb"
-                className="text-white ml-4 mt-2 md:mt-0  text-base font-medium ff_raleway"
-              >
-                A flat fee of 1XPR will be change for creating your token as a
-                one time fee.
-              </label>
+            <div className="mt-4">
+              <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" />
+              <label for="styled-checkbox-1" className="text-white md:mt-0  text-base font-medium ff_raleway">A flat fee of 1XPR will be change for creating your token as a one time fee.</label>
             </div>
           </form>
-          <button className=" mt-9 py-3 px-5 md:py-4 md:px-9 bg-transparent border-white border rounded-[32px] text-white text-sm md:text-lg font-semibold ff_raleway">
+          <button className="mt-9 py-3 px-5 md:py-4 md:px-9 bg-transparent ease-in-out duration-300 hover:bg-[#1C2F6F] hover:border-[#1C2F6F] border-white border rounded-[32px] text-white text-sm md:text-lg font-semibold ff_raleway">
             Create Token
           </button>
         </div>

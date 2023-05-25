@@ -77,7 +77,7 @@ function BlaspadBonesSection() {
             <div className="md:w-6/12 flex items-end pt-8">
               <div className="w-4/12 pr-3">
                 <div className="flex items-end">
-                  <div>
+                  <div className="flex flex-col">
                     <h3 className=" ff_raleway font-normal xl:text-2xl text-[#4377F8]">
                       Bonus
                     </h3>
@@ -101,8 +101,7 @@ function BlaspadBonesSection() {
               </div>
               <div className="w-4/12 pr-3">
                 <div className="flex items-end">
-
-                  <div>
+                  <div className="flex flex-col">
                     <h3 className=" ff_raleway font-normal xl:text-2xl text-[#4377F8] mb-4">
                       Bonus
                     </h3>
@@ -126,7 +125,7 @@ function BlaspadBonesSection() {
               </div>
               <div className="w-4/12 ">
                 <div className="flex items-end">
-                  <div>
+                  <div className="flex flex-col">
                     <h3 className=" ff_raleway font-normal xl:text-2xl text-[#4377F8] mb-12">
                       Bonus
                     </h3>

@@ -6,7 +6,7 @@ function MyFooter() {
     <section className="footer_bg_clouds h-full  bg-no-repeat bg-cover pt-8 md:pb-[172px] pb-12">
       <div className="container  mx-auto px-3">
         <div className="flex sm:justify-between  max-[768px]:flex-col">
-          <div>
+          <div className="flex flex-col">
             <a
               className="flex items-center justify-center md:justify-start"
               href="#"

@@ -168,7 +168,7 @@ const MyNav = () => {
               </div>
             </div>
             <label className="label z-50 xl:hidden">
-              <input type="checkbox" />
+              <input className="menu_icon_input" type="checkbox" />
               <div onClick={() => setNav(!nav)} class="lines">
                 <span class="top"></span>
                 <span class="middle"></span>

@@ -8,7 +8,7 @@ const ChooseTheAir = () => {
     <div className="frequentlyBg">
       <div className="container mx-auto px-3">
         <div className="grid lg:grid-cols-2 grid-cols-1  gap-3 items-center py-10 md:py-20 lg:py-24">
-          <div>
+          <div className="flex flex-col">
             <h2 className="text-3xl text-center lg:text-start md:text-4xl lg:text-[40px] text-white font-bold ff_raleway">
               Air Drop Tokens
             </h2>

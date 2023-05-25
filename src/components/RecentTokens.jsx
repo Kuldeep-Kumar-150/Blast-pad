@@ -42,7 +42,7 @@ const RecentTokens = () => {
 
                 <h5 className='text-[30px] sm:text-[40px] font-semibold ff_raleway text-white text-center mt-10 sm:mt-20 xl:mt-0'>All Recent Tokens</h5>
                 <div className="relative">
-                    <button onClick={() => myslider.current.slickPrev()} className="h-12 flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-[50%] translate-y-[-50%] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center">
+                    <button onClick={() => myslider.current.slickPrev()} className="h-12 ease-in-out duration-300 hover:bg-[#4478F9] flex max-[1260px]:hidden absolute w-[52px] 2xl:-left-24 -left-14  top-[50%] translate-y-[-50%] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center">
                         <svg
                             width="14"
                             height="24"
@@ -57,7 +57,7 @@ const RecentTokens = () => {
                         </svg>
                     </button>
                     <button onClick={() => myslider.current.slickNext()}
-                        className="h-12 flex max-[1260px]:hidden absolute 2xl:-right-24 -right-14  top-[50%] translate-y-[-50%] w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
+                        className="h-12 ease-in-out duration-300 hover:bg-[#4478F9] flex max-[1260px]:hidden absolute 2xl:-right-24 -right-14  top-[50%] translate-y-[-50%] w-[52px] bg-[#0B0A34] rounded-[6px] border border-[#2F2D50]  items-center justify-center"
                     >
                         <svg
                             width="14"
@@ -79,7 +79,7 @@ const RecentTokens = () => {
                                     <div className="px-[19px] py-6 border border-[#242246] bg-[#0F0933] rounded-2xl">
                                         <div className="flex items-center">
                                             <div className="h-[70px] w-[70px] flex items-center justify-center rounded-[10px] bg-[#29234A]">
-                                                <img src={rslider.img} alt="" />
+                                                <img className='rotate_animation' src={rslider.img} alt="" />
                                             </div>
                                             <div className='ms-4'>
                                                 <p className='text-white text-[20px] font-bold ff_raleway'>{rslider.headingName}</p>
@@ -94,7 +94,7 @@ const RecentTokens = () => {
                                             <p className='text-base font-medium ff_raleway text-white text-opacity-80 underline'>{rslider.stakeToken}</p>
                                             <p className='text-base font-medium ff_raleway text-white text-opacity-80 underline'>{rslider.claimDrop}</p>
                                         </div>
-                                        <button onClick={() => setModal(true)} className='bg-gradient-to-r from-[#070380] to-[#4478F9] w-full py-3 text-center rounded-full border border-[#2D2B95] text-white ff_raleway font-medium text-base mt-8'>{rslider.btn}</button>
+                                        <button onClick={() => setModal(true)} className='bg-gradient-to-r from-[#070380] to-[#4478F9] ease-in-out duration-300 hover:scale-95 w-full py-3 text-center rounded-full border border-[#2D2B95] text-white ff_raleway font-medium text-base mt-8'>{rslider.btn}</button>
                                     </div>
                                 </div>
 

@@ -6,18 +6,16 @@ import { Route, Routes } from 'react-router-dom';
 import TokenStacking from './components/TokenStacking';
 import TokenPage from './components/TokenPage';
 import AirDrop from './components/AirDrop';
-import FreeWork from './components/FreeWork';
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/airdrop' element={<AirDrop />} />
         <Route path='/tokenStacking' element={<TokenStacking />} />
         <Route path='/createtoken' element={<TokenPage />} />
-        <Route path='/airdrop' element={<AirDrop />} />
       </Routes>
-      {/* <FreeWork/> */}
     </>
   );
 }

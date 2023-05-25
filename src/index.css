@@ -154,7 +154,7 @@
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* <---------CSS----------> */
+/* <---------NAV-BAR-MENU-ICONS-CSS----------> */
 .label {
   width: 100px;
   height: 50px;
@@ -164,7 +164,7 @@
   cursor: pointer;
 }
 
-input[type="checkbox"] {
+.menu_icon_input[type="checkbox"] {
   display: none;
 }
 
@@ -199,6 +199,55 @@ input[type="checkbox"]:checked~.lines .bottom {
   left: 28px;
 }
 
+/* <---------NAV-BAR-MENU-ICONS-END----------> */
+/*<--------------CUSTOM-CHECHBOX-------------> */
+.styled-checkbox {
+  position: absolute;
+  display: none;
+
+  &+label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &+label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 24px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #293261;
+    background: #111A4F;
+  }
+
+  &:focus+label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  &:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+
+/*<--------------CUSTOM-CHECHBOX-END-------------> */
+
 .frequentlyBg {
   background-image: url("../src/assets/img/png/frequentlyBackground.png");
   background-repeat: no-repeat;
@@ -220,6 +269,20 @@ input[type="checkbox"]:checked~.lines .bottom {
   backdrop-filter: blur(8.5px);
 }
 
+/*------ANIMATIONS-------*/
+.rotate_animation {
+  animation: rotate_animation 20s linear infinite;
+}
+
+@keyframes rotate_animation {
+  0% {
+    rotate: 0;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
 
 @keyframes fadein {
   from {
