@@ -11,7 +11,7 @@ function BlaspadBonesSection() {
       <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute -bottom-[20%] right-0"></div>
       <div className="container mx-auto px-3">
         <div className="md:flex-row  md:justify-between flex-col items-center flex ">
-          <div className=" md:w-5/12 w-8/12 ">
+          <div className="md:w-5/12 w-8/12" data-aos="fade-left">
             <img className="w-full" src={blassbones_img} alt="blassbones_img" />
             <img
               width={461}
@@ -21,7 +21,7 @@ function BlaspadBonesSection() {
               alt="blasepad_clouds"
             />
           </div>
-          <div className="lg:w-5/12 md:w-6/12 text-center md:text-start">
+          <div className="lg:w-5/12 md:w-6/12 text-center md:text-start" data-aos="fade-right">
             <h2 className="mb-0 text-white ff_raleway  font-bold lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">
               BlastPad Bonus Pool
             </h2>
@@ -47,7 +47,7 @@ function BlaspadBonesSection() {
             <span className="md:block">Bonus Pool Rewards</span>
           </h2>
           <div className="md:flex  justify-between">
-            <div className=" md:w-5/12  ">
+            <div className=" md:w-5/12" data-aos="fade-up-right">
               <h3 className="text-center md:text-start ff_raleway font-semibold text-2xl text-white pt-4 md:pt-10 ">
                 We can have 3 levels of staking
               </h3>
@@ -73,7 +73,7 @@ function BlaspadBonesSection() {
                 </div>
               </div>
             </div>
-            <div className="md:w-6/12 flex items-end pt-8">
+            <div className="md:w-6/12 flex items-end pt-8" data-aos="fade-up-left">
               <div className="w-4/12 pr-3">
                 <div className="flex items-end">
                   <div className="flex flex-col">

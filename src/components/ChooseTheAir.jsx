@@ -8,7 +8,7 @@ const ChooseTheAir = () => {
     <div className="frequentlyBg">
       <div className="container mx-auto px-3">
         <div className="grid lg:grid-cols-2 grid-cols-1  gap-3 items-center py-10 md:py-20 lg:py-24">
-          <div className="flex flex-col">
+          <div className="flex flex-col" data-aos="flip-left">
             <h2 className="text-3xl text-center lg:text-start md:text-4xl lg:text-[40px] text-white font-bold ff_raleway">
               Air Drop Tokens
             </h2>
@@ -26,7 +26,7 @@ const ChooseTheAir = () => {
               project.
             </p>
           </div>
-          <div className="flex justify-center relative z-10">
+          <div className="flex justify-center relative z-10" data-aos="flip-right">
             <div className="bg-[#4377F8] blur-[146px] h-60 w-60 rounded-full absolute -z-10 to-50% left-2/4 -translate-x-2/4 translate-y-2/4"></div>
             <img
               className="w-full md:w-4/6 lg:w-full"
@@ -43,7 +43,7 @@ const ChooseTheAir = () => {
             <div className="md:w-1/3 relative z-10">
               <div className="bg-[#4377F8] blur-[146px] h-32 bottom-0 md:h-60 w-32 md:w-60 rounded-full absolute -z-10 md:bottom-12 left-1/6  "></div>
 
-              <button
+              <button data-aos="zoom-in"
                 onClick={() => setColor(1)}
                 className={
                   color === 1
@@ -65,7 +65,7 @@ const ChooseTheAir = () => {
                   />
                 </svg>
               </button>
-              <button
+              <button data-aos="zoom-in-up"
                 onClick={() => setColor(2)}
                 className={
                   color === 2
@@ -89,7 +89,7 @@ const ChooseTheAir = () => {
               </button>
             </div>
             <div className={color === 1 ? "md:w-2/3 block" : "hidden md:w-2/3"}>
-              <div className=" overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
+              <div data-aos="fade-right" className=" overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(1)}
                   className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
@@ -190,7 +190,7 @@ const ChooseTheAir = () => {
                   </div>
                 </div>
               </div>
-              <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
+              <div data-aos="fade-left" className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(2)}
                   className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
@@ -290,7 +290,7 @@ const ChooseTheAir = () => {
                   </div>
                 </div>
               </div>
-              <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
+              <div data-aos="fade-right" className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(3)}
                   className="py-[9px] ease-in-out duration-300 hover:scale-95 px-10 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
@@ -393,7 +393,7 @@ const ChooseTheAir = () => {
                 </div>
               </div>
               {/* 4th */}
-              <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
+              <div data-aos="fade-left" className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(4)}
                   className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"
@@ -495,7 +495,7 @@ const ChooseTheAir = () => {
                 </div>
               </div>
               {/* 5th */}
-              <div className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
+              <div data-aos="fade-right" className="mt-5 overflow-hidden border-[1.2px] border-[#3C436A] rounded-[10px]  bg-transparemt py-4 px-5">
                 <button
                   onClick={() => setfirst(5)}
                   className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]"

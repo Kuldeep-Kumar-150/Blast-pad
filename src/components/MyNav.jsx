@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import navRocket from "../assets/img/svg/nav-rocket.svg";
 import walletImg from "../assets/img/svg/wallet_img.svg";
 import { Link } from "react-router-dom";
+import Hamburger from "hamburger-react";
 const MyNav = () => {
   const [nav, setNav] = useState(false);
   const [modal, setModal] = useState(false);
@@ -203,16 +204,12 @@ const MyNav = () => {
                 </button>
               </div>
             </div>
-            <label className="label z-50 xl:hidden">
-              <input className="menu_icon_input" type="checkbox" />
-              <div onClick={() => setNav(!nav)} class="lines">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-              </div>
-            </label>
-          </div>
-        </div>
+            {/*MENU-ICONS*/}
+            <div onClick={() => setNav(!nav)} className="bg-[#4274F5] rounded-lg z-50 ml-4 xl:hidden">
+              <Hamburger />
+            </div>
+          </div >
+        </div >
 
         <div
           className={
@@ -267,8 +264,8 @@ const MyNav = () => {
             <div className="bg-[#4377F8] hidden lg:flex w-[324px] h-28 opacity-80 blur-[141px] absolute bottom-0 right-0 -z-10"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 

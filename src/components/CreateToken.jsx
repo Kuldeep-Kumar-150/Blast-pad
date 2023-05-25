@@ -29,7 +29,7 @@ const CreateToken = () => {
         <h2 className="text-white text-center text-3xl md:text-4xl lg:text-[40px] font-bold ff_raleway">
           Create Token
         </h2>
-        <div className="relative mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
+        <div data-aos="fade-right" className="relative mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
           <button className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
             Step 2
           </button>
@@ -73,7 +73,7 @@ const CreateToken = () => {
           {/*SUBMIT TYPE POPUP OTIFICATION*/}
           <div id="snackbar">your form was successfully submitted</div>
         </div>
-        <div className=" mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
+        <div data-aos="fade-left" className="mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
           <button className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">
             Step 2
           </button>
@@ -209,7 +209,7 @@ const CreateToken = () => {
                     Chose file
                   </button>
                 </div>
-              
+
               </div>
             </div>
             <div className="mt-8 ">

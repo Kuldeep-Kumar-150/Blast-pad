@@ -154,52 +154,10 @@
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* <---------NAV-BAR-MENU-ICONS-CSS----------> */
-.label {
-  width: 100px;
-  height: 50px;
-  display: grid;
-  place-items: center;
-  position: relative;
-  cursor: pointer;
+.menu-item {
+  background: white !important;
 }
 
-.menu_icon_input[type="checkbox"] {
-  display: none;
-}
-
-.lines span {
-  width: 40px;
-  height: 5px;
-  display: block;
-  margin: 5px 0;
-  background: white;
-  transition: 0.4s ease;
-  border-radius: 10px;
-}
-
-input[type="checkbox"]:checked~.lines .top {
-  position: absolute;
-  transform: rotate(-45deg);
-  transform-origin: right;
-  top: 8px;
-  right: 40px;
-}
-
-input[type="checkbox"]:checked~.lines .middle {
-  transform: translateX(-10px);
-  opacity: 0;
-}
-
-input[type="checkbox"]:checked~.lines .bottom {
-  position: absolute;
-  transform: rotate(45deg);
-  transform-origin: left;
-  top: 8px;
-  left: 28px;
-}
-
-/* <---------NAV-BAR-MENU-ICONS-END----------> */
 /*<--------------CUSTOM-CHECHBOX-------------> */
 .styled-checkbox {
   position: absolute;
@@ -269,9 +227,29 @@ input[type="checkbox"]:checked~.lines .bottom {
   backdrop-filter: blur(8.5px);
 }
 
+.back_totop_animation {
+  animation: backtotop 2s linear infinite;
+}
+
 /*------ANIMATIONS-------*/
 .rotate_animation {
-  animation: rotate_animation 20s linear infinite;
+  animation: rotate_animation 8s linear infinite;
+}
+
+.preloader_animation {
+  animation: preloader 3s linear infinite;
+}
+
+@keyframes preloader {
+  50% {
+    scale: 1.3;
+  }
+}
+
+@keyframes backtotop {
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes rotate_animation {

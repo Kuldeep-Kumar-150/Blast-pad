@@ -6,7 +6,7 @@ import BlaspadBonesSection from './BlaspadBonesSection'
 import MyFooter from './MyFooter'
 const TokenStacking = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <div className='header_img_2 xl:flex xl:flex-col xl:min-h-[100vh]'>
                 <MyNav />
                 <OurActive />

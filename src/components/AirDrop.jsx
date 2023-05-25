@@ -7,12 +7,14 @@ import MyFooter from './MyFooter'
 const AirDrop = () => {
     return (
         <>
-            <div className='flex flex-col xl:min-h-[100vh] airdrop_bg_img'>
-                <MyNav />
-                <AirDropSlider />
+            <div className='overflow-hidden'>
+                <div className='flex flex-col xl:min-h-[100vh] airdrop_bg_img'>
+                    <MyNav />
+                    <AirDropSlider />
+                </div>
+                <ChooseTheAir />
+                <MyFooter />
             </div>
-            <ChooseTheAir />
-            <MyFooter />
         </>
     )
 }

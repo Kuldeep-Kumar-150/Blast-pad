@@ -1,9 +1,11 @@
 import React from "react";
 import rocketImg from "../assets/img/svg/timeline_rocket.svg";
 import roadMapCloud from "../assets/img/png/roadmap-cloud.png";
+import earthImageRoadmap from '../assets/img/png/roadmap_earth_img.png'
 const RoadMap = () => {
   return (
     <section className="roadmap_bg_img relative pb-5 lg:pb-40 overflow-hidden">
+      <img className="absolute top-[-4%] right-0 hidden lg:flex" src={earthImageRoadmap} alt="earth-image" />
       <div className="container mx-auto px-3 relative">
         <h4 className="text-white text-[30px] md:text-[40px] font-bold ff_raleway text-center lg:mt-28 mb-8 sm:mb-12">
           Launch Your Project
@@ -14,7 +16,7 @@ const RoadMap = () => {
           alt="rocketImg"
         />
         <div className="timeline_line relative">
-          <div className="p-[21px] ms-16 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
+          <div data-aos="fade-up-right" className="p-[21px] ms-16 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
             <h5 className="text-[20px] font-bold ff_raleway">Token</h5>
             <p className="text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]">
               A token is a sequence of characters that represents a unit of
@@ -27,7 +29,7 @@ const RoadMap = () => {
               Read more
             </a>
           </div>
-          <div className="p-[21px] ms-16 mt-7 lg:mt-0 lg:w-[32%] text-white timeline_cards rounded-[15px] lg:ms-auto right_timeline_box relative">
+          <div data-aos="fade-up-left" className="p-[21px] ms-16 mt-7 lg:mt-0 lg:w-[32%] text-white timeline_cards rounded-[15px] lg:ms-auto right_timeline_box relative">
             <h5 className="text-[20px] font-bold ff_raleway">Airdrop</h5>
             <p className="text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]">
               Airdrops are a marketing strategy used by cryptocurrency projects
@@ -40,7 +42,7 @@ const RoadMap = () => {
               Read more
             </a>
           </div>
-          <div className="p-[21px] hidden lg:block ms-16 mt-7 lg:mt-0 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
+          <div data-aos="fade-down-right" className="p-[21px] hidden lg:block ms-16 mt-7 lg:mt-0 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
             <h5 className="text-[20px] font-bold ff_raleway">Staking</h5>
             <p className="text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]">
               Staking is a process by which users hold cryptocurrency in a
