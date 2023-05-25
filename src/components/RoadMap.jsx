@@ -5,7 +5,7 @@ import earthImageRoadmap from '../assets/img/png/roadmap_earth_img.png'
 const RoadMap = () => {
   return (
     <section className="roadmap_bg_img relative pb-5 lg:pb-40 overflow-hidden">
-      <img className="absolute top-[-4%] right-0 hidden lg:flex" src={earthImageRoadmap} alt="earth-image" />
+      <img className="absolute top-[-4%] right-0 hidden lg:flex -z-10" src={earthImageRoadmap} alt="earth-image" />
       <div className="container mx-auto px-3 relative">
         <h4 className="text-white text-[30px] md:text-[40px] font-bold ff_raleway text-center lg:mt-28 mb-8 sm:mb-12">
           Launch Your Project
