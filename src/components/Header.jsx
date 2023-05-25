@@ -25,12 +25,12 @@ const Header = () => {
           </div>
           <div className="relative mt-10">
             <img
-              className="w-full md:w-4/5 lg:w-full mx-auto"
+              className="w-full  md:w-4/5 lg:w-full mx-auto"
               src={headerImg}
               alt="headerImg"
             />
             <img
-              className="absolute top-[-30px] left-36 hidden lg:flex"
+              className="absolute animation_transform top-[-30px] -z-10 left-36 hidden lg:flex"
               src={smallRocket}
               alt="smallRocket"
             />

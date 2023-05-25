@@ -3,3 +3,13 @@
   -webkit-text-stroke: 0.5px;
   -webkit-text-stroke-color: white;
 }
+.animation_transform {
+  animation: mov 7s linear infinite;
+}
+@keyframes mov {
+  40% {
+    transform: translateX(500px);
+    top: -25%;
+    rotate: -15deg;
+  }
+}
