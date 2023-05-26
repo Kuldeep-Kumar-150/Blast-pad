@@ -16,19 +16,10 @@ const CreateToken = () => {
     console.log(formValue);
     setformValue(initialvalue);
   };
-  {
-    /*SUBMIT TYPE POPUP OTIFICATION*/
-  }
-  function myFunction() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function () {
-      x.className = x.className.replace("show", "");
-    }, 3000);
-  }
+
 
   return (
-    <div className="frequentlyBg py-16 md:py-28 lg:py-40">
+    <div className="frequentlyBg py-16 md:py-28 lg:pb-40">
       <div className="container mx-auto px-3">
         <h2 className="text-white text-center text-3xl md:text-4xl lg:text-[40px] font-bold ff_raleway">
           Create Token
@@ -77,15 +68,12 @@ const CreateToken = () => {
               </div>
             </div>
             <button
-              onClick={() => myFunction()}
               type="submit"
               className="font-normal ease-in-out duration-300 hover:scale-95 text-base text-white py-3 px-7 ff_raleway mt-5 rounded-[32px] bg-gradient-to-r from-[#070380] to-[#4478F9]"
             >
               Log in
             </button>
           </form>
-          {/*SUBMIT TYPE POPUP OTIFICATION*/}
-          <div id="snackbar">your form was successfully submitted</div>
         </div>
         <div data-aos="fade-left" className="mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">
           <button className="py-[9px] px-10 ease-in-out duration-300 hover:scale-95 text-white font-bold ff_raleway text-lg bg-[#1C2F6F] rounded-[22px]">

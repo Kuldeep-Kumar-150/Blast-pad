@@ -116,45 +116,6 @@
   background: #4277F8 !important;
 }
 
-#custom-button {
-  padding: 10px;
-  color: white;
-  background-color: #009578;
-  border: 1px solid #000;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#custom-button:hover {
-  background-color: #00b28f;
-}
-
-#custom-text {
-  margin-left: 10px;
-  font-family: sans-serif;
-  color: #aaa;
-}
-
-#snackbar {
-  visibility: hidden;
-  background-color: green;
-  color: #fff;
-  text-align: center;
-  border-radius: 7px;
-  padding: 16px;
-  position: absolute;
-  z-index: 1;
-  right: 43px;
-  bottom: 20px;
-  font-size: 17px;
-}
-
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
 .menu-item {
   background: white !important;
 }
@@ -231,6 +192,37 @@
   animation: backtotop 2s linear infinite;
 }
 
+/*--------SLIDER----------*/
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 10px !important;
+  left: 0;
+  width: 5px !important;
+  height: 5px !important;
+  content: '' !important;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  opacity: .25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+select {
+  appearance: none;
+
+}
+
+select.dropdown_arrow {
+  background-image: url("./assets/img/svg/dropdown_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 8px;
+  background-position: calc(100% - 15px) 25px, calc(100% - 20px) 1em, 100% 0;
+}
+
 /*------ANIMATIONS-------*/
 .rotate_animation {
   animation: rotate_animation 8s linear infinite;
@@ -286,6 +278,13 @@
   }
 }
 
+@media (min-width:640px) {
+  .slick-dots li button:before {
+    /* top: -20px !important; */
+    left: 0;
+  }
+}
+
 @media (min-width: 767.98px) {
   .bg_blaspad_img {
     background-image: url("./assets/img/png/rewards_bg_img.png");
@@ -296,6 +295,8 @@
   .footer_bg_clouds {
     background-image: url("../src//assets/img/png/footer_clodly_img.png");
   }
+
+
 }
 
 @media (max-width:1023.98px) {
@@ -363,5 +364,9 @@
     left: -69%;
     z-index: 10;
     top: 30%;
+  }
+
+  .header_bg_img {
+    background-size: 100% 100%;
   }
 }

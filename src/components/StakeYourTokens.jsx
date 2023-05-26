@@ -5,12 +5,12 @@ const StakeYourTokens = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 8000,
@@ -22,8 +22,8 @@ const StakeYourTokens = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
-          dots: false,
+          autoplaySpeed: 3000,
+          dots: true,
           arrows: false,
         },
       },
@@ -33,9 +33,9 @@ const StakeYourTokens = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
+          autoplaySpeed: 3000,
           arrows: false,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -44,9 +44,9 @@ const StakeYourTokens = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
+          autoplaySpeed: 3000,
           arrows: false,
-          dots: false,
+          dots: true,
         },
       },
     ],
@@ -135,7 +135,7 @@ const StakeYourTokens = () => {
             })
             .slice(0, 12)}
         </Slider>
-        <div className="text-center mb-10 sm:mb-20 md:mb-40">
+        <div className="text-center mt-10 sm:mt-10 xl:mt-0 mb-10 sm:mb-20 md:mb-40">
           <button className="text-white ease-out duration-300 hover:scale-95 font-semibold text-sm ff_raleway py-4 px-9 bg-gradient-to-r from-[#070380] rounded-[36px] to-[#4478F9]">
             Show more
           </button>

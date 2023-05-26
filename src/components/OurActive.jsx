@@ -21,7 +21,7 @@ const OurActive = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
+          autoplaySpeed: 2000,
         },
       },
       {
@@ -30,7 +30,7 @@ const OurActive = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
+          autoplaySpeed: 2000,
         },
       },
     ],
@@ -90,7 +90,7 @@ const OurActive = () => {
                   >
                     <div className="flex items-center">
                       <div className="h-[70px] w-[70px] bg-[#262752] flex items-center justify-center rounded-[10px]">
-                        <img className="rotate_animation" src={fun.img} alt="metal" />
+                        <img src={fun.img} alt="metal" />
                       </div>
                       <div className="ml-3">
                         <h4 className=" text-xl text-white font-bold ff_raleway">

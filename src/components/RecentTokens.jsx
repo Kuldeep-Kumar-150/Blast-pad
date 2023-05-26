@@ -23,6 +23,7 @@ const RecentTokens = () => {
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 1600,
+          dots: true,
         },
       },
       {
@@ -30,6 +31,7 @@ const RecentTokens = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
           autoplay: true,
           autoplaySpeed: 1600,
         },
@@ -89,7 +91,6 @@ const RecentTokens = () => {
                     <div className="flex items-center">
                       <div className="h-[70px] w-[70px] flex items-center justify-center rounded-[10px] bg-[#29234A]">
                         <img
-                          className="rotate_animation"
                           src={rslider.img}
                           alt="image"
                         />

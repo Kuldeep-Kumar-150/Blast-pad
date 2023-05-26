@@ -7,7 +7,7 @@ const TokenPage = () => {
   return (
     <>
       <div className="overflow-hidden">
-        <div className="create_token_bg_img flex flex-col xl:min-h-[100vh]">
+        <div className="create_token_bg_img flex flex-col xl:min-h-[65vh]">
           <MyNav />
           <RecentTokens />
         </div>

@@ -12,7 +12,7 @@ const Frequently = () => {
         <div data-aos="fade-right">
           <div
             onClick={() => setAccordian(1)}
-            className="flex items-center cursor-pointer justify-between mt-12"
+            className="flex items-center cursor-pointer justify-between mt-[51px]"
           >
             <h2 className="  text-[#E6E6EA] text-xl md:text-2xl ff_raleway font-medium">
               Q1. What is a BlastPad.io?

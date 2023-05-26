@@ -97,7 +97,7 @@ const ChooseTheAir = () => {
                 >
                   Step 1
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(1)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -125,69 +125,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="styled-checkbox-1"
                       type="checkbox"
-                      id="1"
+                      value="value1"
                     />
                     <label
-                      htmlFor="1"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="styled-checkbox-1"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
                   </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
+                  </form>
+                  <div className="mt-5">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="styled-checkbox-2"
                       type="checkbox"
-                      id="2"
+                      value="value1"
                     />
                     <label
-                      htmlFor="2"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="styled-checkbox-2"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -198,7 +191,7 @@ const ChooseTheAir = () => {
                 >
                   Step 2
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(2)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -225,69 +218,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="2"
                       type="checkbox"
-                      id="3"
+                      value="value1"
                     />
                     <label
-                      htmlFor="3"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="2"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
                   </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
+                  </form>
+                  <div className="mt-5">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="3"
                       type="checkbox"
-                      id="4"
+                      value="value1"
                     />
                     <label
-                      htmlFor="4"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="3"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -298,7 +284,7 @@ const ChooseTheAir = () => {
                 >
                   Step 3
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(3)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -327,69 +313,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="4"
                       type="checkbox"
-                      id="5"
+                      value="value1"
                     />
                     <label
-                      htmlFor="5"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="4"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
                   </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
+                  </form>
+                  <div className="mt-5">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="5"
                       type="checkbox"
-                      id="6"
+                      value="value1"
                     />
                     <label
-                      htmlFor="6"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="5"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -401,7 +380,7 @@ const ChooseTheAir = () => {
                 >
                   Step 4
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(4)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -429,69 +408,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="6"
                       type="checkbox"
-                      id="7"
+                      value="value1"
                     />
                     <label
-                      htmlFor="7"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="6"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
                   </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
+                  </form>
+                  <div className="mt-5">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="7"
                       type="checkbox"
-                      id="8"
+                      value="value1"
                     />
                     <label
-                      htmlFor="8"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="7"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -503,7 +475,7 @@ const ChooseTheAir = () => {
                 >
                   Step 5
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(5)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -531,69 +503,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="8"
                       type="checkbox"
-                      id="9"
+                      value="value1"
                     />
                     <label
-                      htmlFor="9"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="8"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
                   </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
+                  </form>
+                  <div className="mt-5">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="9"
                       type="checkbox"
-                      id="10"
+                      value="value1"
                     />
                     <label
-                      htmlFor="10"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="9"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -607,7 +572,7 @@ const ChooseTheAir = () => {
                 >
                   Step 6
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(1)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -636,69 +601,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="10"
                       type="checkbox"
-                      id="11"
+                      value="value1"
                     />
                     <label
-                      htmlFor="11"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="10"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
                   </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
+                  </form>
+                  <div className="mt-5">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
+                      class="styled-checkbox"
+                      id="11"
                       type="checkbox"
-                      id="12"
+                      value="value1"
                     />
                     <label
-                      htmlFor="12"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="11"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
-                  </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -710,7 +668,7 @@ const ChooseTheAir = () => {
                 >
                   Step 7
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(2)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -738,69 +696,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
-                      type="checkbox"
+                      class="styled-checkbox"
                       id="13"
-                    />
-                    <label
-                      htmlFor="13"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
-                    >
-                      Air Drop tokens to Proton accounts older than
-                    </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
-                  </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
-                    <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
                       type="checkbox"
-                      id="14"
+                      value="value1"
                     />
                     <label
-                      htmlFor="14"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="13"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
+                  </div>
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
                   </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  <div className="mt-5">
+                    <input
+                      class="styled-checkbox"
+                      id="14"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label
+                      for="14"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                    >
+                      Air Drop tokens to Proton accounts older than
+                    </label>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -812,7 +763,7 @@ const ChooseTheAir = () => {
                 >
                   Step 8
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(3)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -841,69 +792,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
-                      type="checkbox"
+                      class="styled-checkbox"
                       id="15"
-                    />
-                    <label
-                      htmlFor="15"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
-                    >
-                      Air Drop tokens to Proton accounts older than
-                    </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
-                  </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
-                    <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
                       type="checkbox"
-                      id="16"
+                      value="value1"
                     />
                     <label
-                      htmlFor="16"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="15"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
+                  </div>
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
                   </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  <div className="mt-5">
+                    <input
+                      class="styled-checkbox"
+                      id="16"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label
+                      for="16"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                    >
+                      Air Drop tokens to Proton accounts older than
+                    </label>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -915,7 +859,7 @@ const ChooseTheAir = () => {
                 >
                   Step 8
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(4)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -943,69 +887,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
-                      type="checkbox"
-                      id="17"
-                    />
-                    <label
-                      htmlFor="17"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
-                    >
-                      Air Drop tokens to Proton accounts older than
-                    </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
-                  </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
-                    <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
-                      type="checkbox"
+                      class="styled-checkbox"
                       id="18"
+                      type="checkbox"
+                      value="value1"
                     />
                     <label
-                      htmlFor="18"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="18"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
+                  </div>
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
                   </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  <div className="mt-5">
+                    <input
+                      class="styled-checkbox"
+                      id="19"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label
+                      for="19"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                    >
+                      Air Drop tokens to Proton accounts older than
+                    </label>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>
@@ -1017,7 +954,7 @@ const ChooseTheAir = () => {
                 >
                   Step 10
                 </button>
-                <div className="flex items-center mt-4 justify-between">
+                <div onClick={() => setfirst(5)} className="flex cursor-pointer items-center mt-4 justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-white h-1 w-1"></div>
                     <p className="text-white text-base font-semibold ff_raleway">
@@ -1045,69 +982,62 @@ const ChooseTheAir = () => {
                   }
                 >
                   <div className=" mt-6 border border-[#0B113A]"></div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
+                  <div className="mt-4">
                     <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
-                      type="checkbox"
-                      id="19"
-                    />
-                    <label
-                      htmlFor="19"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
-                    >
-                      Air Drop tokens to Proton accounts older than
-                    </label>
-                  </form>
-                  <div className="mt-[10px] cursor-pointer flex items-center px-5 justify-between w-full md:w-1/2  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                    <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                      1 Day
-                    </h4>
-                    <img
-                      className=" rotate-180"
-                      src={arrowImage}
-                      height={7}
-                      width={12}
-                      alt="image"
-                    />
-                  </div>
-                  <form className=" flex flex-col md:flex-row  items-center mt-5">
-                    <input
-                      className="h-6 w-6 border-[1.2px] border-[#293161] rounded-[5px] bg-[#080D33] appearance-none"
-                      type="checkbox"
+                      class="styled-checkbox"
                       id="20"
+                      type="checkbox"
+                      value="value1"
                     />
                     <label
-                      htmlFor="20"
-                      className="text-[#B3B3BD] ml-4 mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                      for="20"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
                     >
                       Air Drop tokens to Proton accounts older than
                     </label>
+                  </div>
+                  <form >
+                    <select className="w-full md:w-1/2 py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                      <option value="volvo">1 Day</option>
+                      <option value="saab">2 Day</option>
+                      <option value="fiat">3 Day</option>
+                      <option value="audi">4 Day</option>
+                    </select>
                   </form>
-                  <div className="flex flex-col md:flex-row items-center gap-3">
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        100
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
-                    <div className="mt-[10px] cursor-pointer flex items-center w-full px-5 justify-between  bg-[#090C2E] border border-[#212344] rounded-[10px]">
-                      <h4 className="text-base font-bold ff_raleway text-white py-[18px]">
-                        XPR
-                      </h4>
-                      <img
-                        className=" rotate-180"
-                        src={arrowImage}
-                        height={7}
-                        width={12}
-                        alt="image"
-                      />
-                    </div>
+                  <div className="mt-5">
+                    <input
+                      class="styled-checkbox"
+                      id="21"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label
+                      for="21"
+                      className="text-[#B3B3BD] mt-2 md:mt-0 text-[11px] min-[418px]:text-base  font-normal ff_raleway"
+                    >
+                      Air Drop tokens to Proton accounts older than
+                    </label>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-center gap-3 w-full">
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">100</option>
+                        <option value="saab">200</option>
+                        <option value="fiat">300</option>
+                        <option value="audi">400</option>
+                      </select>
+                    </form>
+
+                    <form className="w-full">
+                      <select className="w-full py-[18px] mt-[10px] dropdown_arrow  px-5 text-base font-bold ff_raleway text-white outline-0 cursor-pointer bg-[#090C2F] border border-[#212344] rounded-[10px]" id="cars" name="cars">
+                        <option value="volvo">XPR</option>
+                        <option value="saab">XP</option>
+                        <option value="fiat">PR</option>
+                        <option value="audi">XR</option>
+                      </select>
+                    </form>
+
                   </div>
                 </div>
               </div>

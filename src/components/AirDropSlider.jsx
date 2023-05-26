@@ -19,7 +19,8 @@ const AirDropSlider = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
+          dots: true,
+          autoplaySpeed: 2000,
         },
       },
       {
@@ -28,7 +29,8 @@ const AirDropSlider = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
+          dots: true,
+          autoplaySpeed: 2000,
         },
       },
     ],
@@ -121,7 +123,7 @@ const AirDropSlider = () => {
               );
             })}
           </Slider>
-          <div className="text-center">
+          <div className="text-center mt-14">
             <button className="ease-in duration-300 hover:bg-[#4478F9] hover:border-[#4478F9] text-sm py-3 px-16 md:text-base font-semibold ff_raleway text-white md:py-4 md:px-36  border border-[#313558] rounded-[32px] showBtn">
               Create an AirDrop
             </button>
