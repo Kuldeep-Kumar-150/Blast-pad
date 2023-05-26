@@ -27,7 +27,7 @@ function App() {
         <Route path='/tokenStacking' element={<TokenStacking />} />
         <Route path='/createtoken' element={<TokenPage />} />
       </Routes>
-      <PreLoader />
+      {/* <PreLoader /> */}
       <BackToTop />
     </>
   );
