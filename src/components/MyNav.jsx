@@ -15,6 +15,25 @@ const MyNav = () => {
     }
   }, [nav]);
 
+  // FORM SUBMISION//
+  const initialvalue = {
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
+  }
+  const [formValue, setformValue] = useState(initialvalue);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setformValue({ ...formValue, [name]: value });
+  };
+  const formSubmit = (e) => {
+    e.preventDefault();
+    console.log(formValue)
+    setformValue(initialvalue)
+  }
+
   return (
     <section>
       <div className="container mx-auto px-3">
@@ -226,36 +245,30 @@ const MyNav = () => {
             <p className="text-base font-normal ff_raleway text-[#C2C6D1] text-center z-40">
               We Are Here For You! How Can We Help?
             </p>
-            <form className="text-center">
+            <form className="text-center" onSubmit={formSubmit}>
               <div className="md:flex gap-6 mt-8">
-                <input
+                <input onChange={handleInputChange} value={formValue.firstname} name="firstname"
                   className="outline-0 w-full py-4 md:py-[23px] px-4 rounded-[10px] border border-[#4D5B7E] bg-[#3C518B] text-base font-normal text-white ff_raleway"
                   type="text"
                   placeholder="First name"
                 />
-                <input
+                <input onChange={handleInputChange} value={formValue.lastname} name="lastname"
                   className="outline-0 w-full py-4 md:py-[23px] mt-[20px] md:mt-0 px-4 rounded-[10px] border border-[#4D5B7E] bg-[#3C518B] text-base font-normal text-white ff_raleway"
                   type="text"
                   placeholder="Last name"
                 />
               </div>
-              <input
+              <input onChange={handleInputChange} value={formValue.email} name="email"
                 className="outline-0 my-[20px] w-full py-4 md:py-[23px] px-4 rounded-[10px] border border-[#4D5B7E] bg-[#3C518B] text-base font-normal text-white ff_raleway"
                 type="email"
                 placeholder="Email"
               />
-              <textarea
+              <textarea onChange={handleInputChange} value={formValue.message} name="message"
                 className="w-full hide_scroll_bar min-h-[131px] py-4 md:py-[23px] px-4 rounded-[10px] border border-[#4D5B7E] bg-[#3C518B] text-base font-normal text-white ff_raleway outline-0 resize-none"
                 placeholder="Message"
-              ></textarea>
-              <a
-                onClick={() => setModal(false)}
-                href="#"
-                type="submit"
-                className="py-4 mt-7 px-[37px] bg_blue_linear text-lg font-semibold text-white ff_raleway inline-block rounded-full"
               >
-                Contact us
-              </a>
+              </textarea>
+              <button onClick={() => setModal(false)} className="py-4 mt-7 px-[37px] bg_blue_linear text-lg font-semibold text-white ff_raleway inline-block rounded-full" type="submit">Contact us</button>
             </form>
             <div className="bg-[#4377F8] hidden lg:flex w-80 h-28 opacity-80 blur-[141px] absolute top-[-20px] left-[-20px]"></div>
             <div className="bg-[#4377F8] hidden lg:flex w-80 h-28 opacity-80 blur-[141px] absolute top-0 left-[50%] -z-10"></div>
