@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import navRocket from "../assets/img/svg/nav-rocket.svg";
 import walletImg from "../assets/img/svg/wallet_img.svg";
 import { Link } from "react-router-dom";
-import Hamburger from "hamburger-react";
+import crossImg from '../assets/img/svg/cross-svgrepo-com.svg'
 const MyNav = () => {
   const [nav, setNav] = useState(false);
   const [modal, setModal] = useState(false);
@@ -35,8 +35,8 @@ const MyNav = () => {
               nav == true
                 ? "text-white gap-[20px] bg_blue_linear xl:hidden rounded fixed flex flex-col ease-in-out duration-700 z-50 items-center justify-center top-0 left-0 w-full h-[100vh]"
                 : "bg_blue_linear text-white gap-[20px] xl:hidden rounded fixed flex flex-col ease-in-out duration-700 left-[-100%] w-[50%] h-0 z-50 items-center justify-center top-[-50%]"
-            }
-          >
+            }>
+            <img onClick={() => setNav(false)} className="absolute top-5 right-5" src={crossImg} alt="crossImg" />
             <li onClick={() => setNav(false)}>
               <Link onClick={() => setNavLinks(1)} to={"/"}>
                 <a
@@ -204,9 +204,10 @@ const MyNav = () => {
                 </button>
               </div>
             </div>
-            {/*MENU-ICONS*/}
-            <div onClick={() => setNav(!nav)} className="bg-[#4274F5] rounded-lg z-50 ml-4 xl:hidden">
-              <Hamburger />
+            <div onClick={() => setNav(true)} className="flex flex-col gap-1 cursor-pointer ml-4 xl:hidden">
+              <span className="h-[3px] w-[25px] bg-white"></span>
+              <span className="h-[3px] w-[25px] bg-white"></span>
+              <span className="h-[3px] w-[25px] bg-white"></span>
             </div>
           </div >
         </div >
