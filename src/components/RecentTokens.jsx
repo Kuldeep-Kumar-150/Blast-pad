@@ -14,7 +14,7 @@ const RecentTokens = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1200,
@@ -22,7 +22,7 @@ const RecentTokens = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 1600,
+          autoplaySpeed: 4000,
           dots: true,
         },
       },
@@ -33,7 +33,7 @@ const RecentTokens = () => {
           slidesToScroll: 1,
           dots: true,
           autoplay: true,
-          autoplaySpeed: 1600,
+          autoplaySpeed: 4000,
         },
       },
     ],

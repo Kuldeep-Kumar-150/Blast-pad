@@ -11,7 +11,7 @@ const AirDropSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1200,
@@ -20,7 +20,7 @@ const AirDropSlider = () => {
           slidesToScroll: 1,
           autoplay: true,
           dots: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 4000,
         },
       },
       {
@@ -30,7 +30,7 @@ const AirDropSlider = () => {
           slidesToScroll: 1,
           autoplay: true,
           dots: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 4000,
         },
       },
     ],

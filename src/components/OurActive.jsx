@@ -13,7 +13,7 @@ const OurActive = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1200,
@@ -21,7 +21,8 @@ const OurActive = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          dots: true,
+          autoplaySpeed: 4000,
         },
       },
       {
@@ -30,7 +31,8 @@ const OurActive = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 2000,
+          dots: true,
+          autoplaySpeed: 4000,
         },
       },
     ],
