@@ -3,7 +3,7 @@ import arrowImage from "../assets/img/svg/arrowImage.svg";
 const Frequently = () => {
   const [accordian, setAccordian] = useState(1);
   return (
-    <div className="frequentlyBg py-16 md:py-24 lg:py-36 relative">
+    <div className="frequentlyBg py-16 md:py-24 lg:py-36 relative ">
       <div className="bg-[#4377F8] w-48 h-48 blur-[175px] absolute right-0  top-0 -z-10"></div>
       <div className="container mx-auto px-3">
         <h2 className="text-white font-bold text-2xl  md:text-4xl lg:text-[40px] ff_raleway">
@@ -20,13 +20,13 @@ const Frequently = () => {
             <img
               className={
                 accordian === 1
-                  ? " rotate-0 ease-in duration-300 "
-                  : " rotate-180 ease-in duration-300 "
+                  ? " rotate-0 ease-in duration-300 w-4 h-2 md:w-6 md:h-3 "
+                  : " rotate-180 ease-in duration-300 w-4 h-2 md:w-6 md:h-3"
               }
               src={arrowImage}
               alt="arrowImage"
-              width={24}
-              height={13}
+              
+            
             />
           </div>
           <p
@@ -56,13 +56,13 @@ const Frequently = () => {
             <img
               className={
                 accordian === 2
-                  ? " rotate-0 ease-in duration-300 "
-                  : " rotate-180 ease-in duration-300 "
+                  ? " rotate-0 ease-in duration-300 w-4 h-2 md:w-6 md:h-3 "
+                  : " rotate-180 ease-in duration-300 w-4 h-2 md:w-6 md:h-3"
               }
               src={arrowImage}
               alt="arrowImage"
-              width={24}
-              height={13}
+              
+            
             />
           </div>
           <p
@@ -92,13 +92,13 @@ const Frequently = () => {
             <img
               className={
                 accordian === 3
-                  ? " rotate-0 ease-in duration-300 "
-                  : " rotate-180 ease-in duration-300 "
+                  ? " rotate-0 ease-in duration-300 w-4 h-2 md:w-6 md:h-3 "
+                  : " rotate-180 ease-in duration-300 w-4 h-2 md:w-6 md:h-3"
               }
               src={arrowImage}
               alt="arrowImage"
-              width={24}
-              height={13}
+              
+            
             />
           </div>
           <p
@@ -128,13 +128,13 @@ const Frequently = () => {
             <img
               className={
                 accordian === 4
-                  ? " rotate-0 ease-in duration-300 "
-                  : " rotate-180 ease-in duration-300 "
+                  ? " rotate-0 ease-in duration-300 w-4 h-2 md:w-6 md:h-3 "
+                  : " rotate-180 ease-in duration-300 w-4 h-2 md:w-6 md:h-3"
               }
               src={arrowImage}
               alt="arrowImage"
-              width={24}
-              height={13}
+              
+            
             />
           </div>
           <p
@@ -164,13 +164,13 @@ const Frequently = () => {
             <img
               className={
                 accordian === 5
-                  ? " rotate-0 ease-in duration-300 "
-                  : " rotate-180 ease-in duration-300 "
+                  ? " rotate-0 ease-in duration-300 w-4 h-2 md:w-6 md:h-3 "
+                  : " rotate-180 ease-in duration-300 w-4 h-2 md:w-6 md:h-3"
               }
               src={arrowImage}
               alt="arrowImage"
-              width={24}
-              height={13}
+              
+            
             />
           </div>
           <p
@@ -200,13 +200,13 @@ const Frequently = () => {
             <img
               className={
                 accordian === 6
-                  ? " rotate-0 ease-in duration-300 "
-                  : " rotate-180 ease-in duration-300 "
+                  ? " rotate-0 ease-in duration-300 w-4 h-2 md:w-6 md:h-3 "
+                  : " rotate-180 ease-in duration-300 w-4 h-2 md:w-6 md:h-3"
               }
               src={arrowImage}
               alt="arrowImage"
-              width={24}
-              height={13}
+              
+            
             />
           </div>
           <p
@@ -236,13 +236,13 @@ const Frequently = () => {
             <img
               className={
                 accordian === 7
-                  ? " rotate-0 ease-in duration-300 "
-                  : " rotate-180 ease-in duration-300 "
+                  ? " rotate-0 ease-in duration-300 w-4 h-2 md:w-6 md:h-3 "
+                  : " rotate-180 ease-in duration-300 w-4 h-2 md:w-6 md:h-3"
               }
               src={arrowImage}
               alt="arrowImage"
-              width={24}
-              height={13}
+              
+            
             />
           </div>
           <p

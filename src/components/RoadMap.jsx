@@ -4,18 +4,20 @@ import roadMapCloud from "../assets/img/png/roadmap-cloud.png";
 import earthImageRoadmap from '../assets/img/png/roadmap_earth_img.png'
 const RoadMap = () => {
   return (
-    <section className="roadmap_bg_img relative pb-5 lg:pb-40 overflow-hidden">
+    <section className="roadmap_bg_img relative pb-5 lg:pb-40 ">
       <img className="absolute top-[-4%] right-0 hidden lg:flex -z-10" src={earthImageRoadmap} alt="earth-image" />
       <div className="container mx-auto px-3 relative">
-        <h4 className="text-white text-[30px] md:text-[40px] font-bold ff_raleway text-center lg:mt-28 mb-8 sm:mb-12">
+        <h4 className="text-white text-2xl  md:text-4xl lg:text-[40px] font-bold ff_raleway text-center lg:mt-28 mb-8 sm:mb-12">
           Launch Your Project
         </h4>
+        <div>
         <img
-          className="hidden lg:flex sticky top-0 left-1/2 translate-x-[-51%] z-30 w-44 h-44"
+          className=" lg:sticky absolute h-32 w-32 -left-8 top-14  lg:top-0 lg:left-1/2 lg:translate-x-[-51%] z-30 lg:w-44 lg:h-44"
           src={rocketImg}
           alt="rocketImg"
         />
-        <div className="timeline_line relative z-10">
+        </div>
+        <div className="timeline_line relative z-10 mt-16 lg:mt-0">
           <div data-aos="fade-up-right" className="p-[21px] ms-16 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
             <h5 className="text-[20px] font-bold ff_raleway">Token</h5>
             <p className="text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]">
@@ -56,7 +58,7 @@ const RoadMap = () => {
             </a>
           </div>
         </div>
-        <div className="p-[21px] lg:hidden ms-16 mt-7 lg:mt-0 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative">
+        <div className="p-[21px] lg:hidden ms-16 mt-7 lg:mt-0 lg:ms-0 lg:w-[32%] text-white timeline_cards rounded-[15px] left_timeline_box relative z-10">
           <h5 className="text-[20px] font-bold ff_raleway">Staking</h5>
           <p className="text-base font-normal ff_raleway text-[#B4B9C8] mt-[10px]">
             Staking is a process by which users hold cryptocurrency in a wallet
@@ -70,7 +72,7 @@ const RoadMap = () => {
           </a>
         </div>
         <img
-          className=" absolute bottom-[-35%] left-0"
+          className=" absolute -z-10 hidden lg:block bottom-[-20%]  left-0"
           src={roadMapCloud}
           alt="roadMapCloud"
         />

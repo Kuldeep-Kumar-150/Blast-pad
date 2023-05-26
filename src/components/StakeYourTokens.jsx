@@ -54,8 +54,8 @@ const StakeYourTokens = () => {
   return (
     <div className="relative z-10">
       <div className=" blur-[175px] bg-[#4377F8] h-36 w-36 lg:h-56 lg:w-56 absolute bottom-0 right-0 -z-10"></div>
-      <div className="container mx-auto px-3 mt-20 md:mt-36 lg:mt-60 ">
-        <h6 className="text-[30px] font-bold ff_raleway text-white text-center">
+      <div className="container mx-auto px-3 ">
+        <h6 className="text-2xl  md:text-4xl lg:text-[40px] font-bold ff_raleway text-white text-center">
           Stake Your Tokens
         </h6>
         <Slider
