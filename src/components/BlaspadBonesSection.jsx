@@ -4,11 +4,11 @@ import blassbones_img from "../assets/img/png/bonuspool_man_img.png";
 import bones_img1 from "../assets/img/png/bonus_img1.png";
 function BlaspadBonesSection() {
   return (
-    <section className="bg_blaspad_img bg-no-repeat bg-cover xl:pt-[108px] lg:pt-[100px] pt-[50px] relative z-10">
+    <section className="bg_blaspad_img bg-no-repeat bg-cover xl:pt-[108px] lg:pt-[100px] pt-[50px] pb-20 md:pb-36 lg:pb-60  relative z-10">
       <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[221px] lg:w-[130px] w-[80px] h-[278px] absolute top-0 right-0"></div>
       <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute top-0 left-0"></div>
       <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute top-[50%] left-0"></div>
-      <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute -bottom-[20%] right-0"></div>
+      <div className="bg-[#4377F8] blur-[175px] -z-10  min-w-[50px] xl:w-[256px] lg:w-[130px] w-[80px] h-[256px] absolute -bottom-[10%] right-0"></div>
       <div className="container mx-auto px-3">
         <div className="md:flex-row  md:justify-between flex-col items-center flex ">
           <div className="md:w-5/12 w-8/12" data-aos="fade-left">
@@ -22,7 +22,7 @@ function BlaspadBonesSection() {
             />
           </div>
           <div className="lg:w-5/12 md:w-6/12 text-center md:text-start" data-aos="fade-right">
-            <h2 className="mb-0 text-white ff_raleway  font-bold lg:text-[40px] md:text-[30px] sm:text-[30px] text-[25px]">
+            <h2 className="mb-0 text-white ff_raleway  font-bold text-2xl  md:text-4xl lg:text-[40px]">
               BlastPad Bonus Pool
             </h2>
             <p className=" ff_raleway font-normal text-base text-white pt-2 lg:pt-2">
@@ -42,13 +42,13 @@ function BlaspadBonesSection() {
         </div>
 
         <div className="pt-16">
-          <h2 className=" ff_raleway font-bold md:text-[40px] sm:text-[30px] text-[29px]   text-white text-center md;leading-[46px]">
+          <h2 className=" ff_raleway font-bold text-2xl  md:text-4xl lg:text-[40px]   text-white text-center md;leading-[46px]">
             Stake your Blastpad tokens for
             <span className="md:block">Bonus Pool Rewards</span>
           </h2>
           <div className="md:flex  justify-between">
             <div className=" md:w-5/12" data-aos="fade-up-right">
-              <h3 className="text-center md:text-start ff_raleway font-semibold text-2xl text-white pt-4 md:pt-10 ">
+              <h3 className="text-center md:text-start ff_raleway font-semibold text-lg md:text-2xl text-white pt-4 md:pt-10 ">
                 We can have 3 levels of staking
               </h3>
               <p className="text-center md:text-start ff_raleway font-normal text-base text-white pt-4 md:max-w-[396px]">

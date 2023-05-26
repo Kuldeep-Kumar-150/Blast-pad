@@ -105,10 +105,11 @@
 .timeline_line::after {
   content: "";
   position: absolute;
-  height: 105%;
-  border: 3px dashed white;
-  top: 102px;
-  left: 20px;
+  height: 115%;
+  width: 10px;
+  background-image: url("../src/assets/img/svg/Line.svg");
+  top: 52px;
+  left: 16px;
   z-index: -1;
 }
 
@@ -337,7 +338,8 @@
     content: "";
     position: absolute;
     height: 110%;
-    border: 3px dashed white;
+    width: 10px;
+    background-image: url("../src/assets/img/svg/Line.svg");
     top: -20px;
     left: 50%;
     transform: translateX(-50%);

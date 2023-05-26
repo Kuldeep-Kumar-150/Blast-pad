@@ -30,7 +30,7 @@ const CreateToken = () => {
   return (
     <div className="frequentlyBg py-16 md:py-28 lg:py-40">
       <div className="container mx-auto px-3">
-        <h2 className="text-white text-center text-3xl md:text-4xl lg:text-[40px] font-bold ff_raleway">
+        <h2 className="text-white text-center text-2xl md:text-4xl lg:text-[40px] font-bold ff_raleway">
           Create Token
         </h2>
         <div data-aos="fade-right" className="relative mt-10 border-[1.2px] border-[#3C3F60] rounded-[15px]  bg-[#0C0F31] py-5 md:py-[30px] px-4 md:px-11">

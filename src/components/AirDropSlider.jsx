@@ -36,7 +36,7 @@ const AirDropSlider = () => {
   return (
     <section className="flex flex-col justify-center items-center flex-grow">
       <div className="container mx-auto px-3 my-14 xl:my-0">
-        <h5 className="text-white ff_raleway font-semibold text-[30px] sm:text-[40px] text-center">
+        <h5 className="text-white ff_raleway font-semibold text-2xl  md:text-4xl lg:text-[40px] text-center">
           Claim AirDrop
         </h5>
         <div className="relative">
@@ -78,7 +78,7 @@ const AirDropSlider = () => {
             {airDropS.map((m) => {
               return (
                 <div className="px-3">
-                  <div className="border rounded-2xl hover:bg-[#0B0C28] ease-in-out duration-300 border-[#222851] bg-[#0A103D] p-2 sm:p-5">
+                  <div className="border card_shadow rounded-2xl hover:bg-[#0B0C28] ease-in-out duration-300 border-[#222851]  p-2 sm:p-5">
                     <div className="flex items-center">
                       <div className="flex items-center justify-center w-[70px] h-[70px] bg-[#232852] rounded-[10px]">
                         <img src={m.img} alt="image" />

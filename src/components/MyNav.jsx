@@ -42,8 +42,8 @@ const MyNav = () => {
                 <a
                   className={
                     navLinks === 1
-                      ? " text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? " text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="/"
                 >
@@ -53,7 +53,7 @@ const MyNav = () => {
             </li>
             <li onClick={() => setNav(false)}>
               <a
-                className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                className="text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                 href="#"
               >
                 About Us
@@ -64,8 +64,8 @@ const MyNav = () => {
                 <a
                   className={
                     navLinks === 2
-                      ? "text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="#"
                 >
@@ -78,8 +78,8 @@ const MyNav = () => {
                 <a
                   className={
                     navLinks === 3
-                      ? "text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="#"
                 >
@@ -92,8 +92,8 @@ const MyNav = () => {
                 <a
                   className={
                     navLinks === 4
-                      ? "text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="#"
                 >
@@ -126,8 +126,8 @@ const MyNav = () => {
                   onClick={() => setNavLinks(1)}
                   className={
                     navLinks === 1
-                      ? "text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="/"
                 >
@@ -137,7 +137,7 @@ const MyNav = () => {
             </Link>
             <li>
               <a
-                className="text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                className="text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                 href="#"
               >
                 About Us
@@ -149,8 +149,8 @@ const MyNav = () => {
                   onClick={() => setNavLinks(2)}
                   className={
                     navLinks === 2
-                      ? "text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="#"
                 >
@@ -164,8 +164,8 @@ const MyNav = () => {
                   onClick={() => setNavLinks(3)}
                   className={
                     navLinks === 3
-                      ? "text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="#"
                 >
@@ -179,8 +179,8 @@ const MyNav = () => {
                   onClick={() => setNavLinks(4)}
                   className={
                     navLinks === 4
-                      ? "text-[14px] font-medium ff_raleway navStroke"
-                      : "text-[14px] font-medium ff_raleway text-[#B1B2BE]"
+                      ? "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white navStroke"
+                      : "text-[14px] font-medium ff_raleway ease-in duration-300 hover:text-white text-[#B1B2BE]"
                   }
                   href="#"
                 >

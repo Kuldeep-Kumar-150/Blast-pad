@@ -39,7 +39,7 @@ const RecentTokens = () => {
   return (
     <section className="flex flex-col items-center justify-center flex-grow">
       <div className="container mx-auto px-3 relative">
-        <h5 className="text-[30px] sm:text-[40px] font-semibold ff_raleway text-white text-center mt-10 sm:mt-20 xl:mt-0">
+        <h5 className="text-2xl  md:text-4xl lg:text-[40px] font-semibold ff_raleway text-white text-center mt-10 sm:mt-20 xl:mt-0">
           All Recent Tokens
         </h5>
         <div className="relative">
@@ -85,7 +85,7 @@ const RecentTokens = () => {
             {recentslider.map((rslider) => {
               return (
                 <div className="px-3">
-                  <div className="px-[19px] py-6 border border-[#242246] bg-[#0F0933] rounded-2xl">
+                  <div className="px-[19px] py-6 border border-[#242246] card_shadow rounded-2xl">
                     <div className="flex items-center">
                       <div className="h-[70px] w-[70px] flex items-center justify-center rounded-[10px] bg-[#29234A]">
                         <img
